@@ -58,7 +58,7 @@ const SubscriptionPlan = () => {
     // console.log("plan clicked", price.id);
     if (state && state.token) {
       const { data } = await axios.post(
-        "http://localhost:8000/api/create-subscription",
+        "https://playwell-online.vercel.app/api/create-subscription",
         {
           priceId: price.id,
         }
