@@ -162,7 +162,7 @@ const MenuMobile = () => {
                 </li>
               </>
             )}
-            <div className="pt-10">
+            <div className="absolute bottom-5">
               <a
                 rel="noopener noreferrer"
                 href="https://discord.gg/jnZrzvkGnz"

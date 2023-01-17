@@ -10,25 +10,22 @@ import Avatar8 from "../../../../assets/avatar/avatar7.webp";
 import Avatar9 from "../../../../assets/avatar/avatar6.webp";
 import Avatar10 from "../../../../assets/avatar/avatar8.webp";
 import Planet from "../../../../assets/planet2.png";
-import Header from "../../../../components/header/Header"
-
+import Header from "../../../../components/header/Header";
 
 const Comunity = () => {
   return (
-    <div
-      className="h-full  relative overflow-hidden pt-20 pb-20 tablet:pb-5 mobile:py-0"
-    >
+    <div className="h-full  relative overflow-hidden pt-20 pb-20 tablet:pb-5 mobile:py-0">
       <div className="overflow-hidden pb-10 mobile:py-8">
-        <Header header="Bli med i fellesskapet vårt på Discord"/>
+        <Header header="Bli med i fellesskapet vårt på Discord" />
       </div>
-      <div className=" relative w-full h-[62vh] flex justify-center items-center mobile:bg-no-repeat mobile:h-[50vh] ">
+      <div className=" relative w-full h-[62vh] flex justify-center items-center mobile:bg-no-repeat mobile:h-full mobile:py-5 ">
         <img
           src={Planet}
           alt="planet"
-          className="animate-spin-slow hidden mobile:block mobile:w-[400px]  mobile:h-[400px] small-mobile:w-[300px] small-mobile:h-[300px] "
+          className="animate-spin-slow hidden mobile:block mobile:w-[400px]  mobile:h-[390px] small-mobile:w-[300px] small-mobile:h-[300px] "
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute top-[2%] left-[5%] z-20 laptop:left-12  screen:top-[18%] screen:left-[3%] tablet:w-[80px] tablet:h-[80px] mobile:w-[50px] mobile:h-[50px] mobile:left-[28%] mobile:top-[25%] small-mobile:left-[10%]"
+          className="w-[120px] h-[120px] rounded-full absolute top-[2%] left-[5%] z-20 laptop:left-12  screen:top-[18%] screen:left-[3%] tablet:w-[80px] tablet:h-[80px] mobile:w-[50px] mobile:h-[50px] mobile:left-[10%] mobile:top-[25%] small-mobile:left-[10%]"
           src={Avatar1}
           alt="avatar"
         />
@@ -54,7 +51,7 @@ const Comunity = () => {
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute right-[30%] bottom-0 z-20 tablet:w-[80px] tablet:h-[80px] tablet:bottom-[10%] mobile:w-[50px] mobile:h-[50px] mobile:bottom-[23%] small-mobile:right-[10%]"
+          className="w-[120px] h-[120px] rounded-full absolute right-[30%] bottom-0 z-20 tablet:w-[80px] tablet:h-[80px] tablet:bottom-[10%] mobile:w-[50px] mobile:h-[50px] mobile:bottom-[15%] small-mobile:right-[10%]"
           src={Avatar5}
           alt="avatar"
         />
@@ -64,22 +61,22 @@ const Comunity = () => {
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute top-10 left-[50%] z-20 tablet:w-[80px] tablet:h-[80px] tablet:top-[18%] mobile:w-[50px] mobile:h-[50px]  "
+          className="w-[120px] h-[120px] rounded-full absolute top-10 left-[50%] z-20 tablet:w-[80px] tablet:h-[80px] tablet:top-[18%] mobile:top-[10%] mobile:w-[50px] mobile:h-[50px]  "
           src={Avatar7}
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute bottom-[3%] left-[2%] z-20 laptop:bottom-[6%] screen:bottom-[13%] tablet:w-[80px] tablet:h-[80px] tablet:bottom-[19%] mobile:w-[50px] mobile:h-[50px] mobile:left-[20%] mobile:top-52 small-mobile:left-[0%] "
+          className="w-[120px] h-[120px] rounded-full absolute bottom-[3%] left-[2%] z-20 laptop:bottom-[6%] screen:bottom-[13%] tablet:w-[80px] tablet:h-[80px] tablet:bottom-[19%] mobile:w-[50px] mobile:h-[50px] mobile:left-[10%] mobile:top-52 small-mobile:left-[0%] "
           src={Avatar8}
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute right-20 top-[7%]  z-20 laptop:top-20 laptop:right-[5%] tablet:w-[80px] tablet:h-[80px] mobile:w-[50px] mobile:h-[50px] mobile:top-[30%] mobile:right-[20%] small-mobile:right-[0%]"
+          className="w-[120px] h-[120px] rounded-full absolute right-20 top-[7%]  z-20 laptop:top-20 laptop:right-[5%] tablet:w-[80px] tablet:h-[80px] mobile:w-[50px] mobile:h-[50px] mobile:top-[30%] mobile:right-[10%] small-mobile:right-[0%]"
           src={Avatar9}
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute right-20 bottom-[9%] z-20 laptop:bottom-[13%] laptop:right-[5%]  tablet:w-[80px] tablet:h-[80px] tablet:bottom-[20%]  mobile:w-[50px] mobile:h-[50px] mobile:bottom-[40%] mobile:right-[15%] small-mobile:right-[0%]"
+          className="w-[120px] h-[120px] rounded-full absolute right-20 bottom-[9%] z-20 laptop:bottom-[13%] laptop:right-[5%]  tablet:w-[80px] tablet:h-[80px] tablet:bottom-[20%]  mobile:w-[50px] mobile:h-[50px] mobile:bottom-[30%] mobile:right-[12%] small-mobile:right-[0%]"
           src={Avatar10}
           alt="avatar"
         />
