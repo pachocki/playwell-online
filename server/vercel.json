@@ -1,4 +1,11 @@
 {
+  "rewrites": [
+    {
+      "sources": "/api/(.*)",
+      "destination": "/api/"
+
+    }
+  ],
   
   "version": 2,
   "builds": [
