@@ -84,7 +84,7 @@ export const Vod = [
 export const CoursesDescriptions = [
   {
     fortnite:
-      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet. Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe på Discord. Du kan æke din sjanse for å vinne.",
+      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet. Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe. Du kan æke din sjanse for å vinne.",
 
     minecraft:
       "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
@@ -98,39 +98,44 @@ export const CoursesDescriptions = [
 ];
 export const CoursesDescriptionsMobile = [
   {
-    id:1,
-    title:"Fortnite",
+    id: 1,
+    title: "Fortnite",
     description:
-      "Fortnite kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter , bevegelse og nøyaktighet i spillet . Under klassene vil erfarne spillere dele verdifulle tips og triks . I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil . Kurset inkluderer også en pakke med kart for øving , samt tilgang til en eksklusiv Fortnite-gruppe .",
+      "Fortnite kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter , bevegelse og nøyaktighet i spillet . Under klassene vil erfarne spillere dele verdifulle tips og triks . I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil . Kurset inkluderer også en pakke med kart for øving , samt tilgang til en eksklusiv Fortnite-gruppe  på Discord.",
     image: require("../assets/hero/fortnite-hero.webp"),
-    border: "border-purple-600 border-2 border-purple-600 shadow-lg shadow-purple-600",
-    link:"/fortnite"
-  }, {
-    id:2,
-    title:"Minecraft",
-    description:
-    "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
-    image: require("../assets/minecraft-course.webp"),
-    border: "border-purple-600 border-2 border-green-400 shadow-lg shadow-green-400",
-    link:"/minecraft"
+    border:
+      "border-purple-600 border-2 border-purple-600 shadow-lg shadow-purple-600",
+    link: "/fortnite",
   },
   {
-    id:3,
-    title:"Robox",
+    id: 2,
+    title: "Minecraft",
+    description:
+      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
+    image: require("../assets/minecraft-course.webp"),
+    border:
+      "border-purple-600 border-2 border-green-400 shadow-lg shadow-green-400",
+    link: "/minecraft",
+  },
+  {
+    id: 3,
+    title: "Robox",
     description:
       "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine ? Da er Robox det perfekte stedet for deg!",
     image: require("../assets/rocket-league2.webp"),
-    border: "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
-    link:"/robox"
+    border:
+      "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
+    link: "/robox",
   },
   {
-    id:4,
-    title:"Koding",
+    id: 4,
+    title: "Koding",
     description:
       "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende konsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
     image: require("../assets/scratch1.webp"),
-    border: "border-purple-600 border-2 border-orange-500 shadow-lg shadow-orange-500",
-    link:"/koding"
+    border:
+      "border-purple-600 border-2 border-orange-500 shadow-lg shadow-orange-500",
+    link: "/koding",
   },
 ];
 
