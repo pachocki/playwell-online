@@ -1,6 +1,8 @@
 {
-  "version": 2,
-  "name": "playwell-online",
-  "builds": [{ "src": "./", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "./" }]
+  "builds": [
+    { "src": "*.js", "use": "@vercel/node" }
+  ],
+  "routes": [
+      { "src": "/(.*)", "dest": "/app.js" }
+  ]
 }
