@@ -84,16 +84,53 @@ export const Vod = [
 export const CoursesDescriptions = [
   {
     fortnite:
-      "Fortnite kurset er designet for folk som ønsker å forbedre sine taktiske ferdigheter, bevegelse i spillet og nøyaktighet. Klassene vil bli gjennomført med erfarne spillere som vil gi ulike typer tips.I tillegg vil det bli gjennomført spillanalyse (VOD), en pakke med kart for trening og tilgang til en spesiell Fortnite-gruppe.",
-  
+      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet. Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe. Du kan æke din sjanse for å vinne.",
+
     minecraft:
-      "I løpet av Minecraft kurset lærer våre lærere deg hvordan du bygger og skaper en ny verden. På spesielle utpekte kart vil de lage spill og aktiviteter som vil forbedre ferdighetene dine og gi deg mye moro.Beseire alt fra spøkelseshus til jungeleventyr i Minecraft Adventures.Våre møter finner sted i en hyggelig atmosfære åpen for alle. Her kan alle føle seg trygge og viktige.",
-  
+      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
+
     robox:
-      "På Robox vil deltagerne ha ukentlige spillsesjoner,hvor de får møte andre spillinteresserte barn og ungdom.Deltagerne blir instruert av en erfaren spill-instruktør som vil sette i gang morsomme aktiviteter og tilrettelegge for sosial gaming.Er du på jakt etter et sted hvor du kan teste ut forskjellige spill, utvikle spillferdighetene dine og samtidig få en sosial gjeng å spille med? Da er dette plassen.",
-  
+      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine og samtidig få en gjeng å spille med? Da er Robox det perfekte stedet for deg.",
+
     koding:
-    "Scratch er et kodespråk med et enkelt visuelt grensesnitt som lar unge brukere lage digitale historier, spill og animasjoner.\nPå Discord skal vi:\nLære hvordan et spill bygges\nLære å bruke løkker og IF-setninger\nBruke variabler og funksjoner\nBygge sitt eget spill ferdig med fungerende spilldesign og logikk.",
+      "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende programmeringskonsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
+  },
+];
+export const CoursesDescriptionsMobile = [
+  {
+    id:1,
+    title:"Fortnite",
+    description:
+      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet . Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe.",
+    image: require("../assets/hero/fortnite-hero.webp"),
+    border: "border-purple-600 border-2 border-purple-600 shadow-lg shadow-purple-600",
+    link:"/fortnite"
+  }, {
+    id:2,
+    title:"Minecraft",
+    description:
+    "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
+    image: require("../assets/minecraft-course.webp"),
+    border: "border-purple-600 border-2 border-green-400 shadow-lg shadow-green-400",
+    link:"/minecraft"
+  },
+  {
+    id:3,
+    title:"Robox",
+    description:
+      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine ? Da er Robox det perfekte stedet for deg!",
+    image: require("../assets/rocket-league2.webp"),
+    border: "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
+    link:"/robox"
+  },
+  {
+    id:4,
+    title:"Koding",
+    description:
+      "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende konsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
+    image: require("../assets/scratch1.webp"),
+    border: "border-purple-600 border-2 border-orange-500 shadow-lg shadow-orange-500",
+    link:"/koding"
   },
 ];
 
@@ -524,29 +561,57 @@ export const Adress = [
   },
 ];
 
-
-export const Fortnite =[
+export const Fortnite = [
   {
     name: "Fortnite lavterskel",
-    title:"Tjenestebeskrivelse",
-    paragraph1:"Velkommen til vårt digitale e-sportsakademi!",
-    paragraph2 :"I dette kurset vil deltagerne ha ukentlige spilltreninger på Discord. Her blir alle deltagerne satt sammen i grupper med andre spillere med jevne ferdigheter.",
-    paragraph3:"Deltagerne blir instruert av en erfaren Fortnite spiller som vil gi deltagerne de rette verktøyene til å utvikle seg i Fortnite. Kurset består av følgende:",
-    paragraph4:"Er du på jakt etter utvikling av spillferdighetene dine i Fortnite, samtidig som du får en sosial gjeng å spille med? Da er dette plassen.",
-    points:["- Felles oppvarming i creative.","- Sosialt samspill i Fortnite.","- Kommunikasjon og mental trening","- Grunnleggende teknikker for bygging i Fortnite","-Aim trening"],
-    points2:["Kurset gjelder:","Ukentlige spilltreninger","Fra 30.januar til og med 14.juni","Mandager 17:00-19:00 på Discord","Aldersgrense: fra 9 år"],
-   
+    title: "Tjenestebeskrivelse",
+    paragraph1: "Velkommen til vårt digitale e-sportsakademi!",
+    paragraph2:
+      "I dette kurset vil deltagerne ha ukentlige spilltreninger på Discord. Her blir alle deltagerne satt sammen i grupper med andre spillere med jevne ferdigheter.",
+    paragraph3:
+      "Deltagerne blir instruert av en erfaren Fortnite spiller som vil gi deltagerne de rette verktøyene til å utvikle seg i Fortnite. Kurset består av følgende:",
+    paragraph4:
+      "Er du på jakt etter utvikling av spillferdighetene dine i Fortnite, samtidig som du får en sosial gjeng å spille med? Da er dette plassen.",
+    points: [
+      "- Felles oppvarming i creative.",
+      "- Sosialt samspill i Fortnite.",
+      "- Kommunikasjon og mental trening",
+      "- Grunnleggende teknikker for bygging i Fortnite",
+      "-Aim trening",
+    ],
+    points2: [
+      "Kurset gjelder:",
+      "Ukentlige spilltreninger",
+      "Fra 30.januar til og med 14.juni",
+      "Mandager 17:00-19:00 på Discord",
+      "Aldersgrense: fra 9 år",
+    ],
   },
   {
     name: "Fornite Avansert",
-    title:"Tjenestebeskrivelse",
-    paragraph1:"Velkommen til vårt digitale e-sportsakademi!",
-    paragraph2 :"I dette kurset vil deltagerne ha ukentlige spilltreninger på Discord. Her blir alle deltagerne satt sammen i grupper med andre spillere med jevne ferdigheter.",
-    paragraph3:"Deltagerne blir instruert av en erfaren Fortnite spiller som vil gi deltagerne de rette verktøyene til å utvikle seg i Fortnite. Kurset består av følgende:",
-    paragraph4:"Er du på jakt etter utvikling av spillferdighetene dine i Fortnite, samtidig som du får en sosial gjeng å spille med? Da er dette plassen.",
-    points:["- Felles oppvarming i creative.","- Sosialt samspill i Fortnite.","- Kommunikasjon og mental trening","- Grunnleggende teknikker for bygging i Fortnite","-Aim trening","- Kosthold, søvn og mental helse ","- Vod-review og spillanalyse"],
-    points2:["Kurset gjelder:","Ukentlige spilltreninger","Fra 30.januar til og med 14.juni","Tirsdager 17:00-19:00 på Discord","Aldersgrense: fra 9 år"],
-   
+    title: "Tjenestebeskrivelse",
+    paragraph1: "Velkommen til vårt digitale e-sportsakademi!",
+    paragraph2:
+      "I dette kurset vil deltagerne ha ukentlige spilltreninger på Discord. Her blir alle deltagerne satt sammen i grupper med andre spillere med jevne ferdigheter.",
+    paragraph3:
+      "Deltagerne blir instruert av en erfaren Fortnite spiller som vil gi deltagerne de rette verktøyene til å utvikle seg i Fortnite. Kurset består av følgende:",
+    paragraph4:
+      "Er du på jakt etter utvikling av spillferdighetene dine i Fortnite, samtidig som du får en sosial gjeng å spille med? Da er dette plassen.",
+    points: [
+      "- Felles oppvarming i creative.",
+      "- Sosialt samspill i Fortnite.",
+      "- Kommunikasjon og mental trening",
+      "- Grunnleggende teknikker for bygging i Fortnite",
+      "-Aim trening",
+      "- Kosthold, søvn og mental helse ",
+      "- Vod-review og spillanalyse",
+    ],
+    points2: [
+      "Kurset gjelder:",
+      "Ukentlige spilltreninger",
+      "Fra 30.januar til og med 14.juni",
+      "Tirsdager 17:00-19:00 på Discord",
+      "Aldersgrense: fra 9 år",
+    ],
   },
-
-]
+];

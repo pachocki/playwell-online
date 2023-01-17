@@ -13,10 +13,10 @@ import InstructorThree from "../../../../assets/playwell-teacher3.webp";
 import Fortnite from "../../../../assets/gif/fortnite-gif.gif";
 import Minecraft from "../../../../assets/gif/minecraft-gif.gif";
 import Scratch from "../../../../assets/gif/scratch-gif.gif";
-import Robox from "../../../../assets/gif/gamingklubb-gif.gif"
+import Robox from "../../../../assets/gif/gamingklubb-gif.gif";
 //Data
 import { CoursesDescriptions } from "../../../../data/Data";
-
+import AboutCoursesMobile from "./AboutCoursesMobile";
 
 const AboutCourses = () => {
   //Registation Of Plugin
@@ -83,18 +83,19 @@ const AboutCourses = () => {
           </h3>
         </div>
       </div>
+
       <div
-        className="cours__presentation flex  w-[400%]  "
+        className="cours__presentation flex  w-[400%] screen:hidden "
         ref={coursPresentation}
       >
         <div className="cours__showcase  w-screen h-full flex justify-center align-center    rounded-t-xl  tablet:flex-col-reverse tablet:justify-end tablet:pt-20 tablet:gap-0 mobile:gap-6 mobile:pt-10 mobile:px-2 ">
           <CoursesDescription
             title="Fortnite"
             text={CoursesDescriptions[0].fortnite}
-          link="/fortnite"
+            link="/fortnite"
           />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full   ">
-          <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
+            <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
               gif={Fortnite}
               instructor={InstructorOne}
@@ -104,9 +105,13 @@ const AboutCourses = () => {
           </div>
         </div>
         <div className="cours__showcase  w-screen h-screen flex justify-center align-center  bg-black/80  rounded-t-xl tablet:flex-col-reverse  tablet:gap-0 mobile:gap-6 mobile:px-2 ">
-          <CoursesDescription title="Minecraft" text={CoursesDescriptions[0].minecraft} link="/minecraft" />
+          <CoursesDescription
+            title="Minecraft"
+            text={CoursesDescriptions[0].minecraft}
+            link="/minecraft"
+          />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
-          <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
+            <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
               gif={Minecraft}
               instructor={InstructorTwo}
@@ -114,11 +119,15 @@ const AboutCourses = () => {
               chat2="Hei:) Så fantastisk!"
             />
           </div>
-          </div>
+        </div>
         <div className="cours__showcase  w-screen h-screen flex justify-center align-center  bg-black/80  rounded-t-xl tablet:flex-col-reverse  tablet:gap-0 mobile:gap-6 mobile:px-2 ">
-          <CoursesDescription title="Robox" text={CoursesDescriptions[0].robox} link="/robox" />
+          <CoursesDescription
+            title="Robox"
+            text={CoursesDescriptions[0].robox}
+            link="/robox"
+          />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
-          <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
+            <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
               gif={Robox}
               instructor={InstructorTwo}
@@ -128,9 +137,13 @@ const AboutCourses = () => {
           </div>
         </div>
         <div className="cours__showcase  w-screen h-screen flex justify-center align-center  bg-black/80 rounded-b-2xl tablet:flex-col-reverse   tablet:gap-0 mobile:px-2 mobile:gap-6 ">
-          <CoursesDescription title="Koding" text={CoursesDescriptions[0].koding} link="/koding" />
+          <CoursesDescription
+            title="Koding"
+            text={CoursesDescriptions[0].koding}
+            link="/koding"
+          />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full   ">
-          <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
+            <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
               gif={Scratch}
               instructor={InstructorThree}
@@ -139,6 +152,9 @@ const AboutCourses = () => {
             />
           </div>
         </div>
+      </div>
+      <div className="screen:block">
+        <AboutCoursesMobile />
       </div>
     </div>
   );

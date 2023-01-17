@@ -66,7 +66,7 @@ const Comunity = () => {
           alt="avatar"
         />
         <img
-          className="w-[120px] h-[120px] rounded-full absolute bottom-[3%] left-[2%] z-20 laptop:bottom-[6%] screen:bottom-[13%] tablet:w-[80px] tablet:h-[80px] tablet:bottom-[19%] mobile:w-[50px] mobile:h-[50px] mobile:left-[10%] mobile:top-52 small-mobile:left-[0%] "
+          className="w-[120px] h-[120px] rounded-full absolute bottom-[3%] left-[2%] z-20 laptop:bottom-[6%] screen:bottom-[13%] tablet:w-[80px] tablet:h-[80px] tablet:bottom-[19%] mobile:w-[50px] mobile:h-[50px] mobile:left-[10%] mobile:top-52 small-mobile:left-[0%] small-mobile:top-40"
           src={Avatar8}
           alt="avatar"
         />

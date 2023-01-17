@@ -70,9 +70,9 @@ const router = createBrowserRouter(
           <Route
             path="/dashboard"
             element={
-              <PrivateRoutes>
+             
                 <DashboardClient />
-              </PrivateRoutes>
+              
             }
           />
           <Route

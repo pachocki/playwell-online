@@ -95,7 +95,7 @@ const MenuMobile = () => {
             className="h-full screen:w-1/2 mobile:absolute mobile:w-full "
           />
           <ul
-            className="flex flex-col justify-center items-center relative w-full h-full gap-5 text-4xl opacity-0 screen:w-1/2 mobile:w-full z-50"
+            className="flex flex-col justify-center items-center relative w-full h-full gap-5 text-4xl opacity-0 screen:w-1/2 mobile:w-full z-50 "
             onClick={() => showMenu((prevState) => !prevState)}
             ref={link}
           >
@@ -162,7 +162,7 @@ const MenuMobile = () => {
                 </li>
               </>
             )}
-            <div className="absolute bottom-5">
+            <div className="absolute bottom-5 pt-5">
               <a
                 rel="noopener noreferrer"
                 href="https://discord.gg/jnZrzvkGnz"
