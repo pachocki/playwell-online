@@ -84,7 +84,7 @@ export const Vod = [
 export const CoursesDescriptions = [
   {
     fortnite:
-      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet. Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe. Du kan æke din sjanse for å vinne.",
+      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet. Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving, samt tilgang til en eksklusiv Fortnite-gruppe på Discord. Du kan æke din sjanse for å vinne.",
 
     minecraft:
       "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
