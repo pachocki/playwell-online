@@ -43,7 +43,7 @@ const SubscriptionPlan = () => {
   }, [state && state.user]);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("http://localhost:8000/api/prices");
+    const { data } = await axios.get("https://playwell-online.vercel.app/api/prices");
     setPrices(data);
     setIsFetching(false);
   };
