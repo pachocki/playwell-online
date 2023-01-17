@@ -1,6 +1,6 @@
-import React, { useRef, useEffect, useState , useContext  } from "react";
+import React, { useRef, useEffect, useState, useContext } from "react";
 //React Router
-import { Link , useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 //Gsap Library
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -61,7 +61,7 @@ const MenuMobile = () => {
 
     return () => ctx.revert();
   }, []);
-   
+
   useEffect(() => {
     tl.current.reversed(!isOpen);
   }, [isOpen]);
@@ -116,7 +116,13 @@ const MenuMobile = () => {
               <Link to="/robox">Robox</Link>
             </li>
             <li className="hover:opacity-50 transition ease-in-out delay-150">
-            <a rel="noopener noreferrer" href="https://www.playwell.no"  target="_blank">Gaming center</a>
+              <a
+                rel="noopener noreferrer"
+                href="https://www.playwell.no"
+                target="_blank"
+              >
+                Gaming center
+              </a>
             </li>
             <li className="hover:opacity-50 transition ease-in-out delay-150">
               <Link to="/omoss">Om oss</Link>
@@ -126,49 +132,45 @@ const MenuMobile = () => {
             </li>
             {state && state.token ? (
               <>
-              <li>
-            <Link to="/dashboard">
-                Dashboard
-                </Link>
-            </li>
-            <li>
-              <button
-                className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg"
-                onClick={logout}
+                <li>
+                  <Link to="/dashboard">Dashboard</Link>
+                </li>
+                <li>
+                  <button
+                    className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg"
+                    onClick={logout}
+                  >
+                    Logout
+                  </button>
+                </li>
+              </>
+            ) : (
+              <>
+                <li>
+                  <Link to="/login">
+                    <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
+                      Login
+                    </button>
+                  </Link>
+                </li>
+                <li>
+                  <Link to="/register">
+                    <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
+                      Signup
+                    </button>
+                  </Link>
+                </li>
+              </>
+            )}
+            <div className="pt-10">
+              <a
+                rel="noopener noreferrer"
+                href="https://discord.gg/jnZrzvkGnz"
+                target="_blank"
               >
-                Logout
-              </button>
-            </li>
-            </>
-          ) : (
-            <>
-              <li>
-                <Link to="/login">
-                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
-                    Login
-                  </button>
-                </Link>
-              </li>
-              <li>
-                <Link to="/register">
-                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
-                    Signup
-                  </button>
-                </Link>
-              </li>
-            </>
-          )}
-            <div className="flex  absolute bottom-20  ">
-            <a
-          rel="noopener noreferrer"
-          href="https://discord.gg/TRU9yBeW"
-          target="_blank"
-        > <FaDiscord className="hover:opacity-20 text-6xl" /></a>
-            </div>
-            <div className="  flex absolute bottom-5 gap-5 text-2xl">
-              <a rel="noopener noreferrer" href="https://twitter.com/playwellesport"  target="_blank"><FaTwitter className="hover:opacity-20" /></a>
-              <a rel="noopener noreferrer" href="https://www.instagram.com/playwellgaming/"  target="_blank"><FaInstagram className="hover:opacity-20" /></a>
-              <a rel="noopener noreferrer" href="https://www.facebook.com/playwellgamingcenter"  target="_blank"><FaFacebookF className="hover:opacity-20" /></a>
+                {" "}
+                <FaDiscord className="hover:opacity-20 text-7xl" />
+              </a>
             </div>
           </ul>
         </div>

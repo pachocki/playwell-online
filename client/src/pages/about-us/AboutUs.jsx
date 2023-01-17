@@ -5,7 +5,7 @@ import AboutTeam from "./sections/about-team/AboutTeam";
 import AboutCompany from "./sections/about-company/AboutCompany";
 import AboutValues from "./sections/about-values/AboutValues";
 import FaqHome from "../home/sections/faq-home/FaqHome";
-import VisitUs from "./sections/visit-us/VisitUs";
+
 const AboutUs = () => {
   return (
     <div>
@@ -19,7 +19,6 @@ const AboutUs = () => {
       <AboutTeam />
       <AboutCompany />
       <FaqHome />
-      <VisitUs />
     </div>
   );
 };
