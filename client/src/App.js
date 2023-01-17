@@ -1,0 +1,144 @@
+//Styles
+import "./index.css";
+import "./styles.css";
+
+//React Router
+import {
+  RouterProvider,
+  createBrowserRouter,
+  Route,
+  createRoutesFromElements,
+} from "react-router-dom";
+
+//Routes
+import {
+  PrivateRoutes,
+  Layout,
+  Fortnite,
+  Scratch,
+  AboutUs,
+  ErrorPage,
+  Minecraft,
+  GamingClub,
+  Login,
+  Home,
+  SignUp,
+  DashboardClient,
+  DashboardSubscription,
+  DashboardCalendar,
+  DashboardLayout,
+  DashboardVod,
+  DashboardAdmin,
+  ForgotPassword,
+  ResetPassword,
+  DashboardUserList,
+  SubscriptionPlan,
+  Basic,
+  Premium,
+  StripeSuccess,
+} from "./router/Router";
+
+//Routes Elements
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
+      <Route errorElement={<ErrorPage />}>
+        <Route index element={<Home />} />
+        <Route path="/stripe/success" element={<StripeSuccess />} />
+        <Route path="/minecraft" element={<Minecraft />} />
+        <Route path="/robox" element={<GamingClub />} />
+        <Route path="/fortnite" element={<Fortnite />} />
+        <Route path="/koding" element={<Scratch />} />
+        <Route path="/omoss" element={<AboutUs />} />
+        <Route
+          path="/subscription"
+          element={
+            <PrivateRoutes>
+              <SubscriptionPlan />
+            </PrivateRoutes>
+          }
+        />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<SignUp />} />
+        <Route path="/forgotpassword" element={<ForgotPassword />} />
+        <Route path="/passwordreset/:resetToken" element={<ResetPassword />} />
+        <Route
+          path="/"
+          element={<DashboardLayout />}
+          errorElement={<ErrorPage />}
+        >
+          <Route
+            path="/dashboard"
+            element={
+              <PrivateRoutes>
+                <DashboardClient />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/dashboard-subscription"
+            element={
+              <PrivateRoutes>
+                <DashboardSubscription />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/basic"
+            element={
+              <PrivateRoutes>
+                <Basic />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/premium"
+            element={
+              <PrivateRoutes>
+                <Premium />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/dashboard-admin"
+            element={
+              <PrivateRoutes>
+                <DashboardAdmin />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/dashboard-userlist"
+            element={
+              <PrivateRoutes>
+                <DashboardUserList />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/dashboard-calendar"
+            element={
+              <PrivateRoutes>
+                <DashboardCalendar />
+              </PrivateRoutes>
+            }
+          />
+          <Route
+            path="/dashboard-vod"
+            element={
+              <PrivateRoutes>
+                <DashboardVod />
+              </PrivateRoutes>
+            }
+          />
+        </Route>
+      </Route>
+    </Route>
+  )
+);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
+
+export default App;
