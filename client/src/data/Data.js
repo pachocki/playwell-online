@@ -101,7 +101,7 @@ export const CoursesDescriptionsMobile = [
     id:1,
     title:"Fortnite",
     description:
-      "Fortnite-kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter, bevegelse og nøyaktighet i spillet . Under klassene vil erfarne spillere dele verdifulle tips og triks. I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil. Kurset inkluderer også en pakke med kart for øving , samt tilgang til en eksklusiv Fortnite-gruppe .",
+      "Fortnite kurset er designet for å hjelpe spillere med å forbedre sine taktiske ferdigheter , bevegelse og nøyaktighet i spillet . Under klassene vil erfarne spillere dele verdifulle tips og triks . I tillegg vil det være spillanalyse (VOD) for å hjelpe deg med å forstå hvordan du kan forbedre din spillestil . Kurset inkluderer også en pakke med kart for øving , samt tilgang til en eksklusiv Fortnite-gruppe .",
     image: require("../assets/hero/fortnite-hero.webp"),
     border: "border-purple-600 border-2 border-purple-600 shadow-lg shadow-purple-600",
     link:"/fortnite"
