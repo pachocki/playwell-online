@@ -23,7 +23,7 @@ app.use(
 );
 
 // autoload routes
-readdirSync("../../routes").map((r) => app.use("/api", require(`./routes/${r}`)));
+readdirSync("./routes").map((r) => app.use("/api", require(`./routes/${r}`)));
 
 // listen
 const port = process.env.PORT || 8000;
