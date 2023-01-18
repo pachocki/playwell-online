@@ -17,7 +17,7 @@ mongoose
 // middlewares
 app.use(express.json({ limit: "5mb" }));
 app.use(cors({
-  origin: ['http://playwell-online-exux.vercel.app'],
+  origin: ['*'],
   allowedHeaders: ['authorization']
 }));
 app.use(function(req, res, next) {
