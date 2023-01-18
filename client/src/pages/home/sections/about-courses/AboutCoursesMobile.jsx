@@ -35,7 +35,7 @@ const AboutCoursesMobile = () => {
               spaceBetween: 10,
             },
           }}
-          className="mySwipe  rounded-xl !py-5 "
+          className="mySwipe  rounded-xl !pb-5 "
         >
           {CoursesDescriptionsMobile.map((item, id) => (
             <SwiperSlide key={item.id}>
