@@ -18,8 +18,7 @@ mongoose
 app.use(express.json({ limit: "5mb" }));
 app.use(
   cors({
-    origin: "*",
-    allowedHeaders: ["authorization"],
+    origin: [process.env.CLIENT_URL],
   })
 );
 
