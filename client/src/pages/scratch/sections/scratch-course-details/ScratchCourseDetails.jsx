@@ -4,8 +4,8 @@ import StreamCard from "../../../../components/stream-card/StreamCard";
 import CourseDetails from "../../../../components/course-details/CourseDetails";
 //Images
 import Instructor from "../../../../assets/team/tg1.webp";
-import Image1 from "../../../../assets/scratch-live.png";
-import Image2 from "../../../../assets/scratch-hero2.jpg";
+import Image1 from "../../../../assets/koding/scratch-live.png";
+import Image2 from "../../../../assets/koding/scratch-hero2.png";
 //Gsap Animation Library
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";

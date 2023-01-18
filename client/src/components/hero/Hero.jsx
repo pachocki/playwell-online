@@ -18,15 +18,15 @@ import { ScrollTrigger } from "gsap/all";
 import MarqueeText from "../marquee/MarqueeText";
 //Import images
 
-import Image from "../../assets/hero/home-hero.webp";
-import Image1 from "../../assets/hero/home-hero1.webp";
-import Image2 from "../../assets/hero/home-hero2.webp";
-import Image3 from "../../assets/hero/home-hero3.webp";
-import Image4 from "../../assets/hero/home-hero4.webp";
-import Image5 from "../../assets/hero/home-hero5.webp";
-import Image6 from "../../assets/hero/home-hero6.webp";
-import Image7 from "../../assets/hero/home-hero7.webp";
-import Image8 from "../../assets/hero/home-hero8.webp";
+import Image from "../../assets/hero/home-hero.png";
+import Image1 from "../../assets/hero/home-hero1.png";
+import Image2 from "../../assets/hero/home-hero2.png";
+import Image3 from "../../assets/hero/home-hero3.png";
+import Image4 from "../../assets/hero/home-hero4.png";
+import Image5 from "../../assets/hero/home-hero5.png";
+import Image6 from "../../assets/hero/home-hero6.png";
+import Image7 from "../../assets/hero/home-hero7.png";
+import Image8 from "../../assets/hero/home-hero8.png";
 
 //Register Plugin
 gsap.registerPlugin(ScrollTrigger);

@@ -1,8 +1,8 @@
 import React, { useEffect, useRef } from "react";
 import Header from "../../components/header/Header";
 //Images
-import Diamond from "../../assets/diamond.png";
-import Fire from "../../assets/fire.png";
+import Diamond from "../../assets/cards/diamond.png";
+import Fire from "../../assets/cards/fire.png";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 import FortniteFly from "../../assets/fortnitefly1.png";

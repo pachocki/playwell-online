@@ -12,11 +12,11 @@ import { ScrollTrigger } from "gsap/all";
 import Instructor from "../../../../assets/playwell-teacher2.webp";
 import Minecraft from "../../../../assets/gif/minecraft-gif.gif";
 import Image1 from "../../../../assets/playwell-hero3.jpg";
-import Image2 from "../../../../assets/gallery/playing-kid2.webp";
-import Image3 from "../../../../assets/gallery/playing-kid3.webp";
-import Image4 from "../../../../assets/gallery/playing-kid1.webp";
-import Image5 from "../../../../assets/gallery/playing-kid4.webp";
-import Image6 from "../../../../assets/gallery/playing-kid5.webp";
+import Image2 from "../../../../assets/gallery/playing-kid2.png";
+import Image3 from "../../../../assets/gallery/playing-kid3.png";
+import Image4 from "../../../../assets/gallery/playing-kid1.png";
+import Image5 from "../../../../assets/gallery/playing-kid4.png";
+import Image6 from "../../../../assets/gallery/playing-kid5.png";
 
 const MinecraftGallery = () => {
  

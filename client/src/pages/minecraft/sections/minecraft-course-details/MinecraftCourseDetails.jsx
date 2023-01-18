@@ -4,8 +4,8 @@ import StreamCard from "../../../../components/stream-card/StreamCard";
 import CourseDetails from "../../../../components/course-details/CourseDetails";
 //Images
 import Instructor from "../../../../assets/playwell-teacher2.webp";
-import Image1 from "../../../../assets/minecraft-info3.jpg";
-import Image2 from "../../../../assets/minecraft-info1.jpg";
+import Image1 from "../../../../assets/minecraft/minecraft-info3.png";
+import Image2 from "../../../../assets/minecraft/minecraft-info1.png";
 import Header from "../../../../components/header/Header";
 
 const MinecraftCourseDetails = () => {

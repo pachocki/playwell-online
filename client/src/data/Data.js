@@ -2,7 +2,7 @@ export const Courses = [
   {
     id: 1,
     name: "Fortnite",
-    image: require("../assets/fortnite-card.webp"),
+    image: require("../assets/cards/fortnite.png"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
@@ -11,7 +11,7 @@ export const Courses = [
   {
     id: 2,
     name: "Minecraft",
-    image: require("../assets/minecraft-course.webp"),
+    image: require("../assets/cards/minecraft.png"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
@@ -20,7 +20,7 @@ export const Courses = [
   {
     id: 3,
     name: "GamingKlubb",
-    image: require("../assets/rocket-league1.webp"),
+    image: require("../assets/cards/robox.png"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
@@ -29,7 +29,7 @@ export const Courses = [
   {
     id: 4,
     name: "Scratch",
-    image: require("../assets/scratch1.webp"),
+    image: require("../assets/cards/scratch.png"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
@@ -40,25 +40,25 @@ export const Tournaments = [
   {
     id: 1,
     name: "Fortnite Turnering",
-    image: require("../assets/hero/fortnite-hero.webp"),
+    image: require("../assets/cards/fortnite-t.png"),
     text: "Vi vil gjerne invitere deg til Fortnite turneringen som finner sted på 12.12.22 ​​kl 20:30.Mer informasjon på Discord.",
   },
   {
     id: 2,
     name: "Fifa",
-    image: require("../assets/fifa.webp"),
+    image: require("../assets/cards/fifa23.png"),
     text: "Vi vil gjerne invitere deg til Fifa23 turneringen som finner sted på 18.12.22 ​​kl 20:30.Mer informasjon på Discord.",
   },
   {
     id: 3,
     name: "Rocket League",
-    image: require("../assets/rocket-league2.webp"),
+    image: require("../assets/cards/robox.png"),
     text: "Vi vil gjerne invitere deg til RL turneringen som finner sted på 17.12.22 ​​kl 17:30.Mer informasjon på Discord.",
   },
   {
     id: 4,
     name: "Scratch",
-    image: require("../assets/hero/scratch-hero.webp"),
+    image: require("../assets/cards/koding.png"),
     text: "Sammen med Jobloop arrangerer vi en scratch konkurranse. Hovedpremien vil være 1000kr. Mer informasjon på Discord.",
   },
 ];
@@ -132,7 +132,7 @@ export const CoursesDescriptionsMobile = [
     title: "Koding",
     description:
       "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende konsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
-    image: require("../assets/scratch1.webp"),
+    image: require("../assets/scratch-course.webp"),
     border:
       "border-purple-600 border-2 border-orange-500 shadow-lg shadow-orange-500",
     link: "/koding",

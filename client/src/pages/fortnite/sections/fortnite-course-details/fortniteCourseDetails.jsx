@@ -5,8 +5,8 @@ import CourseDetails from "../../../../components/course-details/CourseDetails";
 import Header from "../../../../components/header/Header"
 //Images
 import Instructor from "../../../../assets/playwell-teacher.webp";
-import Image1 from "../../../../assets/fortnite-gameplay.webp";
-import Image2 from "../../../../assets/fortnite-gameplay1.webp";
+import Image1 from "../../../../assets/fortnite/fortnite-gameplay.png";
+import Image2 from "../../../../assets/fortnite/fortnite-gameplay1.png";
 
 
 const FortniteCourseDetails = () => {
