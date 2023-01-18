@@ -16,15 +16,12 @@ mongoose
 
 // middlewares
 app.use(express.json({ limit: "5mb" }));
-app.use(cors({
-  origin: ['*'],
-  allowedHeaders: ['authorization']
-}));
-app.use(function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "http://playwell-online-exux.vercel.app");
-  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept, Authorization");
-  next();
-});
+app.use(
+  cors({
+    origin: "*",
+    allowedHeaders: ["authorization"],
+  })
+);
 
 // autoload routes
 readdirSync("./routes").map((r) => app.use("/api", require(`./routes/${r}`)));
