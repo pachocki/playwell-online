@@ -31,7 +31,7 @@ const Comunity = () => {
         />
         <a
           rel="noopener noreferrer"
-          href="https://discord.gg/TRU9yBeW"
+          href="https://discord.gg/cUjtqQ6p8p"
           target="_blank"
         >
           <img

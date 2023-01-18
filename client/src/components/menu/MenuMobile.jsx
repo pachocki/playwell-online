@@ -6,7 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 //React Icons
 import { FaTimes } from "react-icons/fa";
-import { FaFacebookF, FaInstagram, FaTwitter, FaDiscord } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
 //Image
 import Image from "../../assets/menu-mobile.png";
 //Context
@@ -165,7 +165,7 @@ const MenuMobile = () => {
             <div className="absolute bottom-5 pt-5">
               <a
                 rel="noopener noreferrer"
-                href="https://discord.gg/jnZrzvkGnz"
+                href="https://discord.gg/cUjtqQ6p8p"
                 target="_blank"
               >
                 {" "}
