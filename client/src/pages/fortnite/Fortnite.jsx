@@ -3,9 +3,10 @@ import HeroSubpage from "../../components/hero-subpages/HeroSubpages";
 import FornitetGallery from "./sections/fortnite-gallery/FortniteGallery";
 import CourseRecomendation from "../../components/course-recomendation/CourseRecomendation";
 import FortniteCourseDetails from "./sections/fortnite-course-details/fortniteCourseDetails";
-import SubscriptionPlan from '../../components/subscription-plan/SubscriptionPlan';
+//import SubscriptionPlan from '../../components/subscription-plan/SubscriptionPlan';
 import FortniteCourse from "./sections/fortnite-course/FortniteCourse"
-
+import Pricingtest from "../../components/pricing-card/Pricingtest";
+//<SubscriptionPlan/>
 const Maincraft = () => {
   return (
     <div>
@@ -24,8 +25,7 @@ const Maincraft = () => {
       />
       <FortniteCourseDetails />
       <FortniteCourse/>
-      <SubscriptionPlan/>
-     
+     <Pricingtest /> 
     </div>
   );
 };

@@ -5,8 +5,9 @@ import HeroSubpage from "../../components/hero-subpages/HeroSubpages";
 import ScratchGallery from "./sections/scratch-gallery/ScratchGallery";
 import CourseRecomendation from "../../components/course-recomendation/CourseRecomendation";
 import ScratchCourseDetails from "./sections/scratch-course-details/ScratchCourseDetails";
-import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
-
+//import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
+import Pricingtest from "../../components/pricing-card/Pricingtest";
+//<SubscriptionPlan/>
 const Scratch = () => {
   return (
     <div>
@@ -25,7 +26,7 @@ const Scratch = () => {
         text3=" Du leter etter den mest effektive måten å lære alt du trenger for å vokse opp dine spillferdigheter"
       />
      <ScratchCourseDetails/>
-     <SubscriptionPlan/>
+     <Pricingtest/>
     </div>
   );
 };

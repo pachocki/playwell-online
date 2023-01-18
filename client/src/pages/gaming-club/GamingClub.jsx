@@ -4,8 +4,9 @@ import Hero from "../../components/hero/Hero";
 import GamingClubGallery from "./sections/gaming-clubb-gallery/GamingClubGallery";
 import CourseRecomendation from "../../components/course-recomendation/CourseRecomendation";
 import GamingClubDetails from "./sections/gaming-club-details/GamingClubDetails";
-import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
-
+//import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
+import Pricingtest from "../../components/pricing-card/Pricingtest";
+//<SubscriptionPlan />
 const RocketLeague = () => {
   return (
     <div>
@@ -23,7 +24,7 @@ const RocketLeague = () => {
         text3=" Du leter etter den mest effektive måten å lære alt du trenger for å vokse opp dine spillferdigheter"
       />
       <GamingClubDetails />
-      <SubscriptionPlan />
+      <Pricingtest />
     </div>
   );
 };
