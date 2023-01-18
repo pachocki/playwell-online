@@ -43,13 +43,14 @@ const SubscriptionPlan = () => {
   }, [state && state.user]);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("https://playwell-online.vercel.app/api/prices");
+    const { data } = await axios.get(
+      "https://playwell-online.vercel.app/api/prices"
+    );
     setPrices(data);
     setIsFetching(false);
   };
 
   const handleClick = async (e, price) => {
-    
     e.preventDefault();
     if (userSubscriptions && userSubscriptions.includes(price.id)) {
       navigate(`/${price.nickname.toLowerCase()}`);
