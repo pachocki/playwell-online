@@ -43,7 +43,7 @@ const SubscriptionPlan = () => {
   }, [state && state.user]);
 
   const fetchPrices = async () => {
-    const { data } = await axios.get("https://playwell-online.vercel.app/api/prices");
+    const { data } = await axios.get("https://playwell-online.vercel.app/prices");
     setPrices(data);
     setIsFetching(false);
   };
@@ -58,7 +58,7 @@ const SubscriptionPlan = () => {
     // console.log("plan clicked", price.id);
     if (state && state.token) {
       const { data } = await axios.post(
-        "https://playwell-online.vercel.app/api/create-subscription",
+        "https://playwell-online.vercel.app/create-subscription",
         {
           priceId: price.id,
         }
