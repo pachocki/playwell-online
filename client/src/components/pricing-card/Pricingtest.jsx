@@ -89,7 +89,7 @@ const PricingCard = () => {
             </div>
           </div>
         </div>
-        <di className="tablet:pb-10 tablet:py-0 ">
+        <div className="tablet:pb-10 tablet:py-0 ">
           <div className="bg-black/60 w-full px-36 h-[620px] border border-indigo-700 shadow-lg shadow-indigo-700/50  rounded-xl relative laptop:px-24 screen:px-20  tablet:px-14 tablet:h-[565px]  mobile:w-[200px] mobile:h-[450px] mobile:px-1 mobile:pb-2 small-mobile:w-[150px] small-mobile:h-[420px]  ">
             <div className="flex items-center relative justify-center ">
               <img
@@ -132,7 +132,7 @@ const PricingCard = () => {
               </button>
             </div>
           </div>
-        </di>
+        </div>
       </div>
     </div>
   );
