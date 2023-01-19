@@ -9,7 +9,10 @@ import axios from "axios";
 import Spiner from "../../components/spiner/Spiner";
 import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
 
+import { useNavigate } from "react-router-dom";
+
 const DashboardAbonament = () => {
+  const navigate = useNavigate();
   const [state, setState] = useContext(UserContext);
   const [isFetching, setIsFetching] = useState(true);
 
@@ -33,6 +36,8 @@ const DashboardAbonament = () => {
       "https://pwo-mern-api.onrender.com/api/customer-portal"
     );
     window.open(data);
+    navigate(data);
+    console.log(data);
   };
 
   if (isFetching) {
