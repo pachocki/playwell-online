@@ -23,7 +23,7 @@ const DashboardAbonament = () => {
       const { data } = await axios.get(
         "https://pwo-mern-api.onrender.com/api/subscriptions"
       );
-        console.log(data)
+      console.log(data);
       setSubscriptions(data.data);
       setIsFetching(false);
     };
@@ -36,8 +36,8 @@ const DashboardAbonament = () => {
       "https://pwo-mern-api.onrender.com/api/customer-portal"
     );
     window.open(data);
-    navigate(data)
-    console.log(data)
+    navigate(data);
+    console.log(data);
   };
 
   if (isFetching) {
