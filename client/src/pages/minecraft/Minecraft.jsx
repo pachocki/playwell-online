@@ -24,7 +24,6 @@ const Maincraft = () => {
       />
       <MinecraftCourseDetails />
       <SubscriptionPlan />
-      
     </div>
   );
 };

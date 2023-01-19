@@ -19,7 +19,6 @@ const SubscriptionPlan = () => {
       const { data } = await axios.get(
         "https://pwo-mern-api.onrender.com/api/subscriptions"
       );
-      console.log(data);
       setSubscriptions(data.data);
       setIsFetching(false);
     };
@@ -56,7 +55,7 @@ const SubscriptionPlan = () => {
       navigate(`/${price.nickname.toLowerCase()}`);
       return;
     }
-    // console.log("plan clicked", price.id);
+
     if (state && state.token) {
       const { data } = await axios.post(
         "https://pwo-mern-api.onrender.com/api/create-subscription",
