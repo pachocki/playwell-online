@@ -33,7 +33,7 @@ const DashboardAbonament = () => {
 
   const manageSubscriptions = async () => {
     const { data } = await axios.get(
-      "https://pwo-mern-api.onrender.com/customer-portal"
+      "https://pwo-mern-api.onrender.com/api/customer-portal"
     );
     window.open(data);
     navigate(data)
