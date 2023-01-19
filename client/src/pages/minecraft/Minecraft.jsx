@@ -4,9 +4,8 @@ import HeroSubpage from "../../components/hero-subpages/HeroSubpages";
 import MinecraftGallery from "./sections/minecraft-gallery/MinecraftGallery";
 import CourseRecomendation from "../../components/course-recomendation/CourseRecomendation";
 import MinecraftCourseDetails from "./sections/minecraft-course-details/MinecraftCourseDetails";
-import Pricingtest from "../../components/pricing-card/Pricingtest";
-//import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
-//<SubscriptionPlan />
+import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
+
 const Maincraft = () => {
   return (
     <div>
@@ -24,7 +23,7 @@ const Maincraft = () => {
         text3=" Du leter etter den mest effektive måten å lære alt du trenger for å vokse opp dine spillferdigheter"
       />
       <MinecraftCourseDetails />
-      <Pricingtest /> 
+      <SubscriptionPlan />
       
     </div>
   );

@@ -18,7 +18,7 @@ export { default as DashboardAdmin } from "../pages/dashboard-admin/DashboardAdm
 export { default as ForgotPassword } from "../pages/forgot-password/ForgotPassword";
 export { default as ResetPassword } from "../pages/reset-password/ResetPassword";
 export { default as DashboardUserList } from "../pages/dashboard-admin/dashboard-userslist/DashboardUserList";
-export { default as SubscriptionPlan } from "../components/subscription-plan/SubscriptionPlan";
+export { default as Subscription } from "../pages/subscription/Subscription";
 export { default as Basic } from "../pages/basic/Basic";
 export { default as Premium } from "../pages/premium/Premium";
 export { default as StripeSuccess } from "../pages/stripe-succes/StripeSuccess";

@@ -31,18 +31,6 @@ const SubscriptionPlan = () => {
     fetchPrices();
   }, []);
 
-  const updateUserSubscriptions = (state) => {
-    let result = [];
-    if(state && state.user && state.user.subscriptions) {
-        result = state.user.subscriptions.map((sub) => sub.plan.id);
-    }
-    setUserSubscriptions(result);
-}
-
-useEffect(() => {
-    updateUserSubscriptions(state);
-}, [state]);
-
   useEffect(() => {
     const isPaused = async () => {
       state &&
@@ -51,7 +39,7 @@ useEffect(() => {
         state.user.subscriptions.resumes_at &&
         navigate("/dashboard");
     };
-    
+
     state && state.user && isPaused();
   }, [state && state.user]);
 
@@ -92,15 +80,19 @@ useEffect(() => {
       </div>
       <div className="flex justify-center gap-10 items-center  py-20 relative screen:pb-10 screen:gap-2  tablet:py-0 tablet:pt-16 tablet:gap-1 mobile:gap-1 ">
         <div className="absolute from-blue-500/20  to-purple-500/20 bg-gradient-to-b w-[50%] h-[60%] top-[25%] right-[25%] rounded-full blur-2xl backdrop-xl screen:w-full screen:right-0 "></div>
-        {prices && subscriptions? (
-          prices.map((price) => (
-            <PricingCard
-              key={price.id}
-              price={price}
-              handleSubscription={handleClick}
-              userSubscriptions={userSubscriptions}
-            />
-          ))
+        {prices && subscriptions ? (
+          prices
+            .filter(
+              (price) => !subscriptions.find((sub) => sub.plan.id === price.id)
+            )
+            .map((price) => (
+              <PricingCard
+                key={price.id}
+                price={price}
+                handleSubscription={handleClick}
+                userSubscriptions={userSubscriptions}
+              />
+            ))
         ) : (
           <Spiner />
         )}

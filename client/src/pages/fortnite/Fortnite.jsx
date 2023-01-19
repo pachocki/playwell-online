@@ -5,8 +5,9 @@ import CourseRecomendation from "../../components/course-recomendation/CourseRec
 import FortniteCourseDetails from "./sections/fortnite-course-details/fortniteCourseDetails";
 //import SubscriptionPlan from '../../components/subscription-plan/SubscriptionPlan';
 import FortniteCourse from "./sections/fortnite-course/FortniteCourse"
-import Pricingtest from "../../components/pricing-card/Pricingtest";
-//<SubscriptionPlan/>
+import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
+
+
 const Maincraft = () => {
   return (
     <div>
@@ -25,7 +26,7 @@ const Maincraft = () => {
       />
       <FortniteCourseDetails />
       <FortniteCourse/>
-     <Pricingtest /> 
+      <SubscriptionPlan/>
     </div>
   );
 };
