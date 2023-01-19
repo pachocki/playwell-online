@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 //Images
 import Instructor from "../../../../assets/playwell-teacher2.webp";
-import GamingClub from "../../../../assets/gif/gamingklubb-gif.gif";
+import GamingClub from "../../../../assets/robox/robox-gameplay.png";
 import Image1 from "../../../../assets/playwell-hero3.jpg";
 import Image2 from "../../../../assets/gallery/playing-kid2.png";
 import Image3 from "../../../../assets/gallery/playing-kid3.png";
@@ -102,7 +102,7 @@ const MinecraftGallery = () => {
           ref={middleBox}
         >
           <StreamingChat
-            gif={GamingClub}
+            image={GamingClub}
             instructor={Instructor}
             chat1="Hei alle sammen.I dag vi skal spile RL :)"
             chat2="Hei :) Ns , Vi er klar !"
