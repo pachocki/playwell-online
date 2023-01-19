@@ -18,7 +18,7 @@ module.exports = {
 
     extend: {
       backgroundImage: () => ({
-        "hero-dashboard": "url('../src/assets/home-hero.jpg')",
+        "hero-dashboard": "url('../src/assets/hero/home-hero.jpg')",
         "hero-landingpage": "url('../src/assets/hero/hero-landingpage.webp')",
         "subscription": "url('../src/assets/subscription.jpeg')",
         "sign-up": "url('../src/assets/hero/home-hero7.webp')",
