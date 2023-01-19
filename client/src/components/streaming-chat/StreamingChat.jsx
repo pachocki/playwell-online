@@ -62,8 +62,8 @@ const StreamingChat = (props) => {
         <div className="flex flex-col gap-2 w-full h-full  mx-auto my-3 tablet:gap-1">
           <div className="relative">
             <img
-              src={props.gif}
-              alt="gif"
+              src={props.image}
+              alt="game"
               className=" rounded-xl border-[1px] border-gray-600 w-full tablet:h-[200px] "
             />
             <img
