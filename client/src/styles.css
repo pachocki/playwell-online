@@ -214,6 +214,13 @@ a.active{
   100% {background-position: 0% 50%;}
 }
 
+.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
+  bottom:-5px!important;
+  
+}
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet{
+  background: red;
+}
 /*MEDIA QUERIES*/
 @media screen and (max-width: 1230px) {
   .MuiDataGrid-columnHeader:nth-child(1) {
