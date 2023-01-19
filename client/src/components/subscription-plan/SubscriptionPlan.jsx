@@ -39,7 +39,7 @@ const SubscriptionPlan = () => {
         state.user.subscriptions.resumes_at &&
         navigate("/dashboard");
     };
-
+    
     state && state.user && isPaused();
   }, [state && state.user]);
 
@@ -50,7 +50,7 @@ const SubscriptionPlan = () => {
     setPrices(data);
     setIsFetching(false);
   };
-
+console.log(userSubscriptions)
   const handleClick = async (e, price) => {
     e.preventDefault();
     if (userSubscriptions && userSubscriptions.includes(price.id)) {
