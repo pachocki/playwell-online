@@ -31,21 +31,17 @@ const SubscriptionPlan = () => {
     fetchPrices();
   }, []);
 
-  useEffect(() => {
+  const updateUserSubscriptions = (state) => {
     let result = [];
-    const check = () =>
-      state &&
-      state.user &&
-      state.user.subscriptions &&
-      state.user.subscriptions.map((sub) => {
-        result.push(sub.plan.id);
-        return result
-      });
-    check();
+    if(state && state.user && state.user.subscriptions) {
+        result = state.user.subscriptions.map((sub) => sub.plan.id);
+    }
     setUserSubscriptions(result);
-    console.log(result)
-    console.log(userSubscriptions)
-  }, [state && state.user]);
+}
+
+useEffect(() => {
+    updateUserSubscriptions(state);
+}, [state]);
 
   useEffect(() => {
     const isPaused = async () => {
