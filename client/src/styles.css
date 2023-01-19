@@ -185,7 +185,7 @@ a.active{
 }
 
 /*Card Gradient*/
-.rgb::afte{
+.rgb::after{
   content:"";
   background: linear-gradient(45deg,
   #ff0000 0%, 
