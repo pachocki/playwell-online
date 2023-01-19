@@ -49,7 +49,7 @@ const PricingCard = ({ price, handleSubscription, userSubscriptions }) => {
   };
 
   const buttonText = () => {
-    return state && state.token ? "Kjøp" : "Velg";
+    return state && state.token ? "Kjøp" : "Meld deg ";
   };
 
   return (

@@ -36,7 +36,7 @@ const SubscriptionPlan = () => {
         state.user &&
         state.user.subscriptions &&
         state.user.subscriptions.resumes_at &&
-        navigate("/account");
+        navigate("/dashboard");
     };
 
     state && state.user && isPaused();
