@@ -35,7 +35,7 @@ const DashboardAbonament = () => {
     const { data } = await axios.get(
       "https://pwo-mern-api.onrender.com/api/customer-portal"
     );
-    window.open(data.data);
+    window.open(data);
   };
 
   if (isFetching) {
