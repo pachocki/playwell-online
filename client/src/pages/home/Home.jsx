@@ -8,8 +8,8 @@ import Comunity from "./sections/comunity/Comunity";
 import AboutTeam from "./sections/about-team/AboutTeam";
 import FaqHome from "./sections/faq-home/FaqHome";
 import Gallery from "./sections/gallery/Gallery";
-//import CoursesPricing from "./sections/courses-pricing/CoursesPricing";
-import Pricingtest from "../../components/pricing-card/Pricingtest";
+import CoursesPricing from "./sections/courses-pricing/CoursesPricing";
+//import Pricingtest from "../../components/pricing-card/Pricingtest";
 
 const Home = () => {
   return (
@@ -23,7 +23,7 @@ const Home = () => {
         text2="Dette tilbudet er rettet mot barn og unge i alderen 7-16 år."
       />
       <AboutCourses />
-      <Pricingtest />
+      <CoursesPricing />
       <Comunity />
       <TextSlide />
       <AboutTeam />
