@@ -7,13 +7,9 @@ import axios from "axios";
 const Subscription = () => {
   const [state, setState] = useContext(UserContext);
   const [userSubscriptions, setUserSubscriptions] = useState([]);
-  const [prices, setPrices] = useState([]);
-  const [isFetching, setIsFetching] = useState(true);
+
   const navigate = navigate();
 
-  useEffect(() => {
-    fetchPrices();
-  }, []);
 
   useEffect(() => {
     let result = [];
@@ -40,13 +36,7 @@ const Subscription = () => {
     state && state.user && isPaused();
   }, [state && state.user]);
 
-  const fetchPrices = async () => {
-    const { data } = await axios.get(
-      "https://pwo-mern-api.onrender.com/api/prices"
-    );
-    setPrices(data);
-    setIsFetching(false);
-  };
+
 
  
   return (
