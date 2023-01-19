@@ -39,7 +39,7 @@ const SubscriptionPlan = () => {
       state.user.subscriptions &&
       state.user.subscriptions.map((sub) => {
         result.push(sub.plan.id);
-        console.log(result)
+        return result
       });
     check();
     setUserSubscriptions(result);
