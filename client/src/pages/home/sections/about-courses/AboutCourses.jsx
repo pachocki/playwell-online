@@ -10,10 +10,10 @@ import { ScrollTrigger } from "gsap/all";
 import InstructorOne from "../../../../assets/playwell-teacher.webp";
 import InstructorTwo from "../../../../assets/playwell-teacher2.webp";
 import InstructorThree from "../../../../assets/playwell-teacher3.webp";
-import Fortnite from "../../../../assets/gif/fortnite-gif.gif";
-import Minecraft from "../../../../assets/gif/minecraft-gif.gif";
-import Scratch from "../../../../assets/gif/scratch-gif.gif";
-import Robox from "../../../../assets/gif/gamingklubb-gif.gif";
+import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.png";
+import Minecraft from "../../../../assets/minecraft/minecraft-gameplay.png";
+import Robox from "../../../../assets/robox/robox-gameplay.png";
+import Scratch from "../../../../assets/koding/scratch-koding.png";
 //Data
 import { CoursesDescriptions } from "../../../../data/Data";
 import AboutCoursesMobile from "./AboutCoursesMobile";
@@ -97,7 +97,7 @@ const AboutCourses = () => {
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full   ">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
-              gif={Fortnite}
+              image={Fortnite}
               instructor={InstructorOne}
               chat1="Hei alle sammen.I dag skal vi trene nøyaktighet og taktikk på nye maps."
               chat2="Hei! Super, det er akkurat dette som jeg har det største problem!"
@@ -113,7 +113,7 @@ const AboutCourses = () => {
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
-              gif={Minecraft}
+              image={Minecraft}
               instructor={InstructorTwo}
               chat1="Hei alle sammen.I dag vi skal bygge et stor by:)"
               chat2="Hei:) Så fantastisk!"
@@ -129,7 +129,7 @@ const AboutCourses = () => {
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
-              gif={Robox}
+              image={Robox}
               instructor={InstructorTwo}
               chat1="Hei alle sammen.I dag vi skal spile Rl :)"
               chat2="Hei:) Så kjekt!"
@@ -145,7 +145,7 @@ const AboutCourses = () => {
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full   ">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
-              gif={Scratch}
+              image={Scratch}
               instructor={InstructorThree}
               chat1="Hei alle sammen.I dag  skal vi lage Pacman ! "
               chat2="Hei ! Wow så fantastisk !"

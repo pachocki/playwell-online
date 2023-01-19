@@ -111,7 +111,7 @@ export const CoursesDescriptionsMobile = [
     id: 2,
     title: "Minecraft",
     description:
-      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
+      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle.",
     image: require("../assets/minecraft-course.webp"),
     border:
       "border-purple-600 border-2 border-green-400 shadow-lg shadow-green-400",
@@ -131,8 +131,8 @@ export const CoursesDescriptionsMobile = [
     id: 4,
     title: "Koding",
     description:
-      "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende konsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
-    image: require("../assets/scratch-course.webp"),
+      "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende konsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører.",
+    image: require("../assets/koding/scratch-hero2.png"),
     border:
       "border-purple-600 border-2 border-orange-500 shadow-lg shadow-orange-500",
     link: "/koding",

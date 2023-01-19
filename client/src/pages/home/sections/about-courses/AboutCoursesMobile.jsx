@@ -41,17 +41,18 @@ const AboutCoursesMobile = () => {
             <SwiperSlide key={item.id}>
               <div
                 className={
-                  " w-full h-full rounded-xl overflow-hidden " + item.border
+                  " w-full h-full rounded-xl overflow-hidden relative z-10 bg-black" 
                 }
               >
-                <div className="p-2 screen:h-[30vh] tablet:h-[28vh]">
-                  <img src={item.image} alt="Fortnite" className="rounded-xl" />
+                <div className="rgb ">
+                <div className="px-1 pt-1 screen:h-[30vh] tablet:h-[28vh]">
+                  <img src={item.image} alt="Fortnite" className="rounded-t-xl" />
                 </div>
-                <div className=" pt-3 pb-8 mobile:pb-4 screen:h-[51vh] tablet:h-full">
+                <div className=" pt-3 pb-8 mobile:pb-4 screen:h-[51vh] tablet:h-full bg-black mx-1 mb-1 rounded-b-xl">
                   <span className="text-3xl font-bold small-mobile:text-2xl">
                     {item.title}
                   </span>
-                  <p className="pt-3 text-left screen:px-4  tablet:px-2 text-xl tablet:text-[1.18rem] small-mobile:text-[0.95rem]">
+                  <p className="pt-3 text-left screen:px-4  tablet:px-2 text-xl tablet:text-[1rem] small-mobile:text-[0.95rem]">
                     {item.description}
                   </p>
                   <div className="pt-5">
@@ -62,6 +63,7 @@ const AboutCoursesMobile = () => {
                     </Link>
                   </div>
                 </div>
+              </div>
               </div>
             </SwiperSlide>
           ))}
