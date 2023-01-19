@@ -102,7 +102,7 @@ const SignUp = () => {
         setEmail("");
         setMatchPassword("");
         console.log(data);
-        console.clear();
+         ;
         toast.success(
           `Hei ${data.user.username}. Du er en del av oss nå. Gratulere!`
         );

@@ -36,8 +36,6 @@ const DashboardAbonament = () => {
       "https://pwo-mern-api.onrender.com/api/customer-portal"
     );
     window.open(data.data);
-    navigate(data.data);
-   
   };
 
   if (isFetching) {

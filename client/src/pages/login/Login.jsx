@@ -51,7 +51,7 @@ const Login = () => {
         setState(data);
         localStorage.setItem("auth", JSON.stringify(data));
         console.log(state);
-        console.clear();
+         ;
         setTimeout(() => {
           navigate("/");
      }, 2000);

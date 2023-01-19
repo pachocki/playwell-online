@@ -23,7 +23,7 @@ const Dropdown = () => {
     localStorage.removeItem("auth");
     navigate("/");
     console.log(state);
-    console.clear();
+     ;
     
   };
 

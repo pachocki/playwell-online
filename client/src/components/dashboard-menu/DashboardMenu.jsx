@@ -25,7 +25,7 @@ const DashboardMenu = () => {
     localStorage.removeItem("auth");
     navigate("/");
     console.log(state);
-    console.clear();
+     ;
   };
 
   return (
