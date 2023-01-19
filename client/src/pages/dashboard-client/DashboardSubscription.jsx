@@ -38,6 +38,7 @@ const DashboardAbonament = () => {
     window.open(data);
     navigate(data);
     console.log(data);
+    console.log("click")
   };
 
   if (isFetching) {
@@ -90,7 +91,7 @@ const DashboardAbonament = () => {
                   <div className="pt-10 flex gap-40 mobile:gap-5">
                     <button
                       className="py-2 px-3 text-2xl border-2 hover:opacity-80 mobile:px-1 mobile:py-1 mobile:text-lg rounded-xl"
-                      onClick={manageSubscriptions}
+                      onClick={()=>manageSubscriptions()}
                     >
                       Manage Subscription
                     </button>
