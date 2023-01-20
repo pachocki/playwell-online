@@ -52,7 +52,7 @@ export const Tournaments = [
   {
     id: 3,
     name: "Rocket League",
-    image: require("../assets/cards/robox.png"),
+    image: require("../assets/cards/rocket-t.png"),
     text: "Vi vil gjerne invitere deg til RL turneringen som finner sted på 17.12.22 ​​kl 17:30.Mer informasjon på Discord.",
   },
   {
