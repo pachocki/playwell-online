@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from "../../../../components/header/Header"
-import Image from "../../../../assets/gallery/playwell__gallery4.webp";
+import Image from "../../../../assets/about-us.webp";
 
 
 const AboutValues = () => {
