@@ -9,7 +9,7 @@ import axios from "axios";
 import Spiner from "../../components/spiner/Spiner";
 import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
 
-import { useNavigate } from "react-router-dom";
+import { useNavigate , Link } from "react-router-dom";
 
 const DashboardAbonament = () => {
   const navigate = useNavigate();
@@ -94,9 +94,9 @@ const DashboardAbonament = () => {
                     >
                       Manage Subscription
                     </button>
-                    <button className="py-2 px-3 text-2xl bg-red-700  hover:opacity-80 mobile:px-1 mobile:py-1 mobile:text-lg rounded-xl">
+                    <Link to ="/Subscription"><button className="py-2 px-3 text-2xl bg-red-700  hover:opacity-80 mobile:px-1 mobile:py-1 mobile:text-lg rounded-xl">
                       Upgrade
-                    </button>
+                    </button></Link>
                   </div>
                 </div>
               </div>
