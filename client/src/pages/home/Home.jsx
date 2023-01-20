@@ -9,7 +9,6 @@ import AboutTeam from "./sections/about-team/AboutTeam";
 import FaqHome from "./sections/faq-home/FaqHome";
 import Gallery from "./sections/gallery/Gallery";
 import CoursesPricing from "./sections/courses-pricing/CoursesPricing";
-//import Pricingtest from "../../components/pricing-card/Pricingtest";
 
 const Home = () => {
   return (

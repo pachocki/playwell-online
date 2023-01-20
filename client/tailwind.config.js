@@ -20,12 +20,12 @@ module.exports = {
       backgroundImage: () => ({
         "hero-dashboard": "url('../src/assets/hero/home-hero.webp')",
         "hero-landingpage": "url('../src/assets/hero/hero-landingpage.webp')",
-        "subscription": "url('../src/assets/subscription.webp')",
+        subscription: "url('../src/assets/subscription.webp')",
         "sign-up": "url('../src/assets/hero/home-hero7.webp')",
         "hero-minecraft": "url('../src/assets/hero/minecraft-hero.webp')",
         "hero-fortnite": "url('../src/assets/hero/fortnite-hero.webp')",
         "hero-scratch": "url('../src/assets/hero/scratch-hero.webp')",
-        "stream": "url('../src/assets/hero/bg-stream.webp')",
+        stream: "url('../src/assets/hero/bg-stream.webp')",
         "error-page": "url('../src/assets/hero/404page.webp')",
         "fortnite-background":
           "url('../src/assets/fortnite/fortnite-background.webp')",

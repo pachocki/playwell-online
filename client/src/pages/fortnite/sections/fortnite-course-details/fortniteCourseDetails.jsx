@@ -2,18 +2,16 @@ import React from "react";
 //Components
 import StreamCard from "../../../../components/stream-card/StreamCard";
 import CourseDetails from "../../../../components/course-details/CourseDetails";
-import Header from "../../../../components/header/Header"
+import Header from "../../../../components/header/Header";
 //Images
 import Instructor from "../../../../assets/playwell-teacher.webp";
 import Image1 from "../../../../assets/fortnite/fortnite-gameplay.webp";
 import Image2 from "../../../../assets/fortnite/fortnite-gameplay1.webp";
 
-
 const FortniteCourseDetails = () => {
- 
   return (
     <div className=" py-16 mobile:pt-10  mobile:pb-0 mobile:px-2">
-      <Header header="Hva får du på kurset vårt?"/>
+      <Header header="Hva får du på kurset vårt?" />
       <div className="flex flex-col gap-10 ">
         <div className="flex justify-around items-center w-full gap-3 px-10 py-20  laptop:px-5 tablet:py-10 screen:px-2 mobile:flex-col-reverse mobile:py-0 mobile:px-1 mobile:pt-10">
           <div className="w-1/2 flex justify-center items-center mobile:w-full mobile:px-1 ">

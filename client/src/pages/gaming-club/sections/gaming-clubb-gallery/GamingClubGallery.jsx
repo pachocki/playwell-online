@@ -43,16 +43,8 @@ const MinecraftGallery = () => {
     tl.to(middleBox.current, {
       scale: 1.2,
     })
-      .to(
-        [sideBoxLeft.current, sideColumnLeft.current],
-        { x: "-50vw" },
-        "<"
-      )
-      .to(
-        [sideBoxRight.current, sideColumnRight.current],
-        { x: "50vw" },
-        "<"
-      );
+      .to([sideBoxLeft.current, sideColumnLeft.current], { x: "-50vw" }, "<")
+      .to([sideBoxRight.current, sideColumnRight.current], { x: "50vw" }, "<");
 
     return () => {
       tl.pause(0).kill(true);
@@ -123,10 +115,7 @@ const MinecraftGallery = () => {
             className="w-full object-cover overflow-hidden rounded h-[200px]  screen:h-[100px]"
           />
         </div>
-        <div
-          className="side-box__right tablet:hidden"
-          ref={sideBoxRight}
-        >
+        <div className="side-box__right tablet:hidden" ref={sideBoxRight}>
           <img
             src={Image6}
             alt="player"

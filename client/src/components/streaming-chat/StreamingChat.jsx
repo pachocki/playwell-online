@@ -38,25 +38,33 @@ const StreamingChat = (props) => {
             alt="Fortnite gameplay"
             className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
           />
-          <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">Trond</p>
+          <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
+            Trond
+          </p>
           <img
             src={Avatar3}
             alt="Fortnite gameplay"
             className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
           />
-          <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">Miqu</p>
+          <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
+            Miqu
+          </p>
           <img
             src={Avatar4}
             alt="Fortnite gameplay"
             className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
           />
-          <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">Instr</p>
+          <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
+            Instr
+          </p>
           <img
             src={Avatar5}
             alt="Fortnite gameplay"
             className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
           />
-          <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">Lionel</p>
+          <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
+            Lionel
+          </p>
           <FaDoorOpen className="text-5xl laptop:text-4xl bottom-2 tablet:text-2xl" />
         </div>
         <div className="flex flex-col gap-2 w-full h-full  mx-auto my-3 tablet:gap-1">
@@ -93,7 +101,9 @@ const StreamingChat = (props) => {
                 <p className="text-orange-500 laptop:text-lg tablet:text-sm mobile:text-[0.8rem]">
                   Instr
                 </p>
-                <p className="laptop:text-sm tablet:text-sm mobile:text-[0.6rem]">Today at 2.39pm</p>
+                <p className="laptop:text-sm tablet:text-sm mobile:text-[0.6rem]">
+                  Today at 2.39pm
+                </p>
               </div>
               <p className="pb-5  laptop:text-lg tablet:text-sm tablet:pb-2 mobile:text-[0.6rem]">
                 {props.chat1}
@@ -111,7 +121,9 @@ const StreamingChat = (props) => {
                 <p className="text-sky-500 laptop:text-lg tablet:text-sm mobile:text-[0.8rem]">
                   Lionel
                 </p>
-                <p className="laptop:text-sm mobile:text-[0.6rem]">Today at 2.39pm</p>
+                <p className="laptop:text-sm mobile:text-[0.6rem]">
+                  Today at 2.39pm
+                </p>
               </div>
               <p className="pb-5 laptop:text-lg tablet:pb-0  tablet:text-sm mobile:text-[0.6rem]">
                 {props.chat2}
@@ -120,7 +132,9 @@ const StreamingChat = (props) => {
             </div>
             <div className="flex justify-between  items-center px-5 tablet:hidden">
               <div className="flex  items-center  h-[3.1rem] tablet:h-full ">
-                <p className="laptop:text-lg mobile:text-[0.6rem]">Send Message:</p>
+                <p className="laptop:text-lg mobile:text-[0.6rem]">
+                  Send Message:
+                </p>
               </div>
               <FaPlusCircle className="text-2xl tablet:hidden" />
             </div>

@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 
 //Components
 import StreamingChat from "../../../../components/streaming-chat/StreamingChat";
-import Header from "../../../../components/header/Header"
+import Header from "../../../../components/header/Header";
 
 //Animation Library
 import gsap from "gsap";
@@ -19,8 +19,7 @@ import Image5 from "../../../../assets/gallery/playing-kid4.webp";
 import Image6 from "../../../../assets/gallery/playing-kid5.webp";
 
 const MinecraftGallery = () => {
- 
-//Refs to create Gsap animation
+  //Refs to create Gsap animation
   const galleryContainer = useRef(null);
   const sideBoxLeft = useRef(null);
   const sideColumnLeft = useRef(null);
@@ -28,7 +27,7 @@ const MinecraftGallery = () => {
   const sideColumnRight = useRef(null);
   const middleBox = useRef(null);
 
-//Gsap Animation
+  //Gsap Animation
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     let tl = gsap.timeline({
@@ -52,16 +51,13 @@ const MinecraftGallery = () => {
 
     return () => {
       tl.pause(0).kill(true);
-    
     };
   }, []);
 
-
-
   return (
     <div>
-      <div className="pt-20 text-center overflow-hidden screen:py-10 tablet:pb-0" >
-       <Header header="Start din nye Scratch eventyret med oss !"/>
+      <div className="pt-20 text-center overflow-hidden screen:py-10 tablet:pb-0">
+        <Header header="Start din nye Scratch eventyret med oss !" />
       </div>
       <div
         className="grid gap-1 h-screen grid-cols-[1fr_1fr_3fr_1fr_1fr] items-center overflow-hidden screen:grid-cols-[1fr_1fr_5fr_1fr_1fr] screen:content-baseline screen:h-full tablet:grid-cols-1"

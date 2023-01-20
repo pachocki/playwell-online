@@ -40,7 +40,10 @@ const StreamCard = (props) => {
             <img
               src={props.image}
               alt="teacher"
-              className={"w-3/4 screen:w-1/2 rounded-xl   mobile:w-2/3 mobile:px-2 " + props.background}
+              className={
+                "w-3/4 screen:w-1/2 rounded-xl   mobile:w-2/3 mobile:px-2 " +
+                props.background
+              }
             />
             <span className="text-center text-4xl laptop:text-3xl screen:text-2xl mobile:text-xl">
               {props.name}
