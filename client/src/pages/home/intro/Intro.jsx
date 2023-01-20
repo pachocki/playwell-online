@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 //Animation
 import { introReveal } from "./anmations";
 //Logo Image
-import Image from "../../../assets/playwell_logo.png";
+import Image from "../../../assets/playwell_logo.webp";
 //Intro Animations
 const Intro = () => {
   useEffect(() => {

@@ -1,5 +1,5 @@
 import React from "react";
-import Decoration from "../../assets/stream-card.png";
+import Decoration from "../../assets/stream-card.webp";
 import Logo from "../../assets/playwell-logo.webp";
 
 const StreamCard = (props) => {

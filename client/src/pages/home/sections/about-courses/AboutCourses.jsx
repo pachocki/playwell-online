@@ -10,10 +10,10 @@ import { ScrollTrigger } from "gsap/all";
 import InstructorOne from "../../../../assets/playwell-teacher.webp";
 import InstructorTwo from "../../../../assets/playwell-teacher2.webp";
 import InstructorThree from "../../../../assets/playwell-teacher3.webp";
-import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.png";
-import Minecraft from "../../../../assets/minecraft/minecraft-gameplay.png";
-import Robox from "../../../../assets/robox/robox-gameplay.png";
-import Scratch from "../../../../assets/koding/scratch-koding.png";
+import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.webp";
+import Minecraft from "../../../../assets/minecraft/minecraft-gameplay.webp";
+import Robox from "../../../../assets/robox/robox-gameplay.webp";
+import Scratch from "../../../../assets/koding/scratch-koding.webp";
 //Data
 import { CoursesDescriptions } from "../../../../data/Data";
 import AboutCoursesMobile from "./AboutCoursesMobile";

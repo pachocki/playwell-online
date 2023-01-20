@@ -3,8 +3,8 @@ import React from "react";
 import StreamCard from "../../../../components/stream-card/StreamCard";
 import CourseDetails from "../../../../components/course-details/CourseDetails";
 import Instructor from "../../../../assets/playwell-teacher2.webp";
-import Image1 from "../../../../assets/robox/gamingklubb1.png";
-import Image2 from "../../../../assets/robox/gamingklubb.png";
+import Image1 from "../../../../assets/robox/gamingklubb1.webp";
+import Image2 from "../../../../assets/robox/gamingklubb.webp";
 import Header from "../../../../components/header/Header";
 
 const MinecraftCourseDetails = () => {

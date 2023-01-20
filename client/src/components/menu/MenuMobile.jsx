@@ -8,7 +8,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { FaTimes } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 //Image
-import Image from "../../assets/menu-mobile.png";
+import Image from "../../assets/menu-mobile.webp";
 //Context
 import { UserContext } from "../../context/context";
 //Register Plugin

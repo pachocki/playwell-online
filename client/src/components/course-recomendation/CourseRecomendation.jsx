@@ -2,7 +2,7 @@ import React from "react";
 //Components
 import Header from "../../components/header/Header"
 //Images
-import Image from "../../assets/joystick.png";
+import Image from "../../assets/joystick.webp";
 
 
 const CourseRecomendation = (props) => {

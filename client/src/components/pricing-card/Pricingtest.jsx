@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from "react";
 import Header from "../../components/header/Header";
 //Images
-import Diamond from "../../assets/cards/diamond.png";
-import Fire from "../../assets/cards/fire.png";
+import Diamond from "../../assets/cards/diamond.webp";
+import Fire from "../../assets/cards/fire.webp";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import FortniteFly from "../../assets/fortnitefly1.png";
+import FortniteFly from "../../assets/fortnitefly1.webp";
 
 const PricingCard = () => {
   gsap.registerPlugin(ScrollTrigger);

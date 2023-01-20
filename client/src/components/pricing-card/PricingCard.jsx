@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 //Images
-import Diamond from "../../assets/cards/diamond.png";
-import Fire from "../../assets/cards/fire.png";
+import Diamond from "../../assets/cards/diamond.webp";
+import Fire from "../../assets/cards/fire.webp";
 //import Context
 import { UserContext } from "../../context/context";
 

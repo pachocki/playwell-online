@@ -1,7 +1,7 @@
 import React , {useEffect , useRef} from "react";
 import gsap from "gsap"
 import { ScrollTrigger } from "gsap/all";
-import FortniteFly from "../../../../assets/fortnitefly1.png"
+import FortniteFly from "../../../../assets/fortnitefly1.webp"
 import SubscriptionPlan from '../../../../components/subscription-plan/SubscriptionPlan';
 
 

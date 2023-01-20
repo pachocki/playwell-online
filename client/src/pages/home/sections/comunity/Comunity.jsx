@@ -1,15 +1,15 @@
 import React from "react";
-import Avatar1 from "../../../../assets/avatar/avatar.png";
-import Avatar2 from "../../../../assets/avatar/playwell.png";
-import Avatar3 from "../../../../assets/avatar/avatar2.png";
-import Avatar4 from "../../../../assets/avatar/avatar3.png";
-import Avatar5 from "../../../../assets/avatar/avatar4.png";
-import Avatar6 from "../../../../assets/avatar/avatar5.png";
-import Avatar7 from "../../../../assets/avatar/avatar1.png";
-import Avatar8 from "../../../../assets/avatar/avatar7.png";
-import Avatar9 from "../../../../assets/avatar/avatar6.png";
-import Avatar10 from "../../../../assets/avatar/avatar8.png";
-import Planet from "../../../../assets/comunity.png";
+import Avatar1 from "../../../../assets/avatar/avatar.webp";
+import Avatar2 from "../../../../assets/avatar/playwell.webp";
+import Avatar3 from "../../../../assets/avatar/avatar2.webp";
+import Avatar4 from "../../../../assets/avatar/avatar3.webp";
+import Avatar5 from "../../../../assets/avatar/avatar4.webp";
+import Avatar6 from "../../../../assets/avatar/avatar5.webp";
+import Avatar7 from "../../../../assets/avatar/avatar1.webp";
+import Avatar8 from "../../../../assets/avatar/avatar7.webp";
+import Avatar9 from "../../../../assets/avatar/avatar6.webp";
+import Avatar10 from "../../../../assets/avatar/avatar8.webp";
+import Planet from "../../../../assets/comunity.webp";
 import Header from "../../../../components/header/Header";
 
 const Comunity = () => {

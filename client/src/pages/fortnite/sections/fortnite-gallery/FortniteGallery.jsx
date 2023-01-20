@@ -7,13 +7,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 //Images
 import Instructor from "../../../../assets/playwell-teacher1.webp";
-import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.png";
+import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.webp";
 import Image1 from "../../../../assets/playwell-hero3.jpg";
-import Image4 from "../../../../assets/gallery/playing-kid1.png";
-import Image2 from "../../../../assets/gallery/playing-kid2.png";
-import Image3 from "../../../../assets/gallery/playing-kid3.png";
-import Image5 from "../../../../assets/gallery/playing-kid4.png";
-import Image6 from "../../../../assets/gallery/playing-kid5.png";
+import Image4 from "../../../../assets/gallery/playing-kid1.webp";
+import Image2 from "../../../../assets/gallery/playing-kid2.webp";
+import Image3 from "../../../../assets/gallery/playing-kid3.webp";
+import Image5 from "../../../../assets/gallery/playing-kid4.webp";
+import Image6 from "../../../../assets/gallery/playing-kid5.webp";
 
 const MinecraftGallery = () => {
 //Atached Dom Elements
