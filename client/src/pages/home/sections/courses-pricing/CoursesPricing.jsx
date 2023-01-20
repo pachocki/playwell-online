@@ -36,13 +36,13 @@ const CoursesPricing = () => {
       <div className="absolute from-blue-500  to-purple-500 bg-gradient-to-b w-[50%] h-[70%] top-[25%] right-[25%] rounded-full blur-2xl backdrop-xl screen:w-full screen:right-0 "></div>
       <div className="h-full  relative overflow-hidden  bg-black/80 z-20 ">
         <div
-          className="absolute right-[0%] top-[-420px] z-20 laptop:right-[-40%] screen:right-[-70%] mobile:right-[-100%] mobile:top-0"
+          className="absolute right-[0%] top-[-420px] z-20 laptop:right-[-40%] screen:right-[-70%]  mobile:top-0"
           ref={flying}
         >
           <img
             src={FortniteFly}
             alt="fortnite"
-            className="w-[400px] h-[400px] mobile:w-[250px] mobile:h-[250px]"
+            className="w-[400px] h-[400px] tablet:w-[250px] tablet:h-[250px]"
           />
         </div>
         <SubscriptionPlan />

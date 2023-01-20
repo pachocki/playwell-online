@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 //React Icons
 import { FaTimes } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+
 //Image
 import Image from "../../assets/menu-mobile.webp";
 //Context
@@ -20,10 +21,13 @@ const MenuMobile = () => {
   //Context
   const [state, setState] = useContext(UserContext);
   //Logout
+
   const logout = () => {
     setState({ user: {}, token: "" });
     localStorage.removeItem("auth");
     navigate("/");
+    window.scrollTo(0, 0);
+    window.location.reload();
   };
 
   const [isOpen, setIsOpen] = useState(false);

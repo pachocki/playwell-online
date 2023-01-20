@@ -15,6 +15,7 @@ import {
 //Context
 import { UserContext } from "../../context/context";
 
+
 const DashboardMenu = () => {
   const navigate = useNavigate();
   const [state, setState] = useContext(UserContext);
@@ -25,7 +26,8 @@ const DashboardMenu = () => {
     localStorage.removeItem("auth");
     navigate("/");
     console.log(state);
-     ;
+    window.location.reload();
+
   };
 
   return (

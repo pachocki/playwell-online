@@ -71,6 +71,17 @@ const SubscriptionPlan = () => {
   if (isFetching) {
     return <Spiner />;
   }
+  if (subscriptions.length >= 2) {
+    return (
+      <div className="mt-20 mobile:mt-10">
+        <div className="py-20 mobile:py-10">
+        <Header header="Hopp inn nå !"/>
+        </div>
+        
+        <div className="bg-center   bg-cover bg-no-repeat object-fit  h-[60vh] bg-paralax tablet:h-[40vh]"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="w-full h-full flex flex-col justify-center  overflow-hidden relative">
