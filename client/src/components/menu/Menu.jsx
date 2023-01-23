@@ -44,7 +44,7 @@ useEffect(() => {
         </div>
         <MenuMobile showMenu={showMenu} isOpen={isOpen} />
 
-        <ul className="big-screen:flex big-screen:text-2xl big-screen:gap-8 big-screen:items-center big-screen:font-bold laptop:text-xl laptop:gap-5 screen:hidden">
+        <ul className="big-screen:flex big-screen:text-2xl big-screen:gap-8 big-screen:items-center big-screen:font-thick laptop:text-xl laptop:gap-5 screen:hidden">
           <li className="hover:opacity-50 transition ease-in-out delay-150">
             <NavLink to="/minecraft">Minecraft</NavLink>
           </li>
@@ -73,7 +73,7 @@ useEffect(() => {
             <NavLink to="/subscription">Meld deg på</NavLink> 
           </li>)  }
         </ul>
-        <ul className="big-screen:flex big-screen:gap-5 big-screen:text-2xl big-screen:items-center big-screen:font-bold laptop:text-xl laptop:gap-5 screen:hidden">
+        <ul className="big-screen:flex big-screen:gap-5 big-screen:text-2xl big-screen:items-center big-screen:font-thick laptop:text-xl laptop:gap-5 screen:hidden">
           {state && state.token ? (
             <>
               <Dropdown />
@@ -82,7 +82,7 @@ useEffect(() => {
             <>
               <li>
                 <Link to="/login">
-                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
+                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg ">
                     Login
                   </button>
                 </Link>

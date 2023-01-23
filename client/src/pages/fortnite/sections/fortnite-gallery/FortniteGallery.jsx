@@ -59,7 +59,7 @@ const MinecraftGallery = () => {
   return (
     <div>
       <div className="pt-20 text-center overflow-hidden screen:py-10 tablet:pb-0" ref={minecraftContainer}>
-        <Header header="Start din nye Fortnite eventyret med oss !"/>
+        <Header header="Nå dine mål i Fortnite sammen med oss!"/>
       </div>
       <div
         className="grid gap-1 h-screen grid-cols-[1fr_1fr_3fr_1fr_1fr] items-center overflow-hidden screen:grid-cols-[1fr_1fr_5fr_1fr_1fr] screen:content-baseline screen:h-full tablet:grid-cols-1"
@@ -101,7 +101,7 @@ const MinecraftGallery = () => {
           <StreamingChat
             image={Fortnite}
             instructor={Instructor}
-            chat1="Hei alle sammen.I dag vi skal spile sparing :)"
+            chat1="Hei alle sammen! I dag skal vi trene på piece-control🙂"
             chat2="Hei :) Ns , Vi er klar !"
           />
         </div>

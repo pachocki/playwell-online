@@ -15,7 +15,7 @@ const HeroSubpages = (props) => {
     <div>
       <div
         className={
-          "flex  items-center w-full h-screen relative px-5  overflow-hidden " +
+          "flex  items-center w-full h-screen relative pl-8  overflow-hidden " +
           props.background
         }
       >
@@ -36,7 +36,7 @@ const HeroSubpages = (props) => {
             Bli med
           </button></Link>
         </div>
-        <div className="absolute w-full bottom-5 left-5 flex  gap-5 text-3xl z-10 screen:text-2xl screen:bottom-2 mobile:justify-center mobile:items-center">
+        <div className="absolute w-full bottom-5 left-6 flex  gap-5 text-3xl z-10 screen:text-2xl screen:bottom-2 mobile:justify-center mobile:items-center">
           <a
             rel="noopener noreferrer"
             href="https://www.facebook.com/playwellgamingcenter"
@@ -82,8 +82,8 @@ const HeroSubpages = (props) => {
         </div>
       </div>
       <MarqueeText
-        background=""
-        text=" - neste kurs starter:12.01.2023 - besøk vår discord kanal - 30% rabatt våren - alle kurs er digitale - Du kan når som helst bytte fra et kurs til et annet helt kostnadsfritt! "
+        background="bg-zinc-900 "
+        text="  ✱ neste kurs starter:12.01.2023  ✱ besøk vår discord kanal  ✱ 30% rabatt våren  ✱ alle kurs er digitale  ✱  Du kan når som helst bytte fra et kurs til et annet helt kostnadsfritt!  "
       />
     </div>
   );

@@ -7,7 +7,7 @@ import CoursesDescription from "./courses-description/CoursesDescription";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 //Images
-import InstructorOne from "../../../../assets/playwell-teacher.webp";
+import InstructorOne from "../../../../assets/playwell-teacher1.webp";
 import InstructorTwo from "../../../../assets/playwell-teacher2.webp";
 import InstructorThree from "../../../../assets/playwell-teacher3.webp";
 import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.webp";

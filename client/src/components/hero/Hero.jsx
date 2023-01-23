@@ -133,8 +133,8 @@ const Hero = (props) => {
         </div>
       </div>
       <MarqueeText
-        background=""
-        text=" - neste kurs starter:12.01.2023 - besøk vår discord kanal - 30% rabatt våren - alle kurs er digitale - Du kan når som helst bytte fra et kurs til et annet helt kostnadsfritt! "
+        background="bg-zinc-900"
+        text="  ✱  neste kurs starter:12.01.2023  ✱  besøk vår discord kanal  ✱  30% rabatt våren  ✱  alle kurs er digitale  ✱  Du kan når som helst bytte fra et kurs til et annet helt kostnadsfritt! "
       />
     </div>
   );
