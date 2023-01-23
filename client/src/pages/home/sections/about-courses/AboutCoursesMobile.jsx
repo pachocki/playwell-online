@@ -33,7 +33,7 @@ const AboutCoursesMobile = () => {
           >
             <div className="rgb ">
               <div className="px-1 pt-1 ">
-                <img src={item.image} alt="Fortnite" className="rounded-t-xl screen:h-[35vh] mobile:h-[25vh]" />
+                <img src={item.image} alt="Fortnite" className="rounded-t-xl screen:h-[35vh] mobile:h-[30vh]" />
               </div>
               <div className="flex flex-col items-center pt-3 pb-8 mobile:pb-4 screen:h-[50vh] mobile:h-[45vh] small-mobile:h-[50vh] bg-black mx-1 mb-1 rounded-b-xl ">
                 <span className="text-3xl font-bold small-mobile:text-2xl">

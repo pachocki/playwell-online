@@ -84,7 +84,7 @@ const SubscriptionPlan = () => {
   }
 
   return (
-    <div className="w-full h-full flex flex-col justify-center  overflow-hidden relative">
+    <div className="w-full h-full flex flex-col justify-center  overflow-hidden relative ">
       <div className="overflow-hidden pb-10 tablet:pb-10 mobile:py-8  ">
         <Header header="Bli med nå" />
       </div>
