@@ -1,6 +1,5 @@
 import React, { useMemo } from "react";
 import Header from "../../../../components/header/Header";
-import { Adress } from "../../../../data/Data";
 import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
 import Spiner from "../../../../components/spiner/Spiner";
 
