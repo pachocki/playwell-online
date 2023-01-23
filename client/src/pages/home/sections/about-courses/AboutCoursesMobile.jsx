@@ -18,12 +18,12 @@ import { CoursesDescriptionsMobile } from "../../../../data/Data";
 
 const AboutCoursesMobile = () => {
   return (
-    <div className="hidden screen:block px-10 screen:px-2 small-mobile:pt-10 screen:pb-20">
+    <div className="hidden screen:block px-10 screen:px-2 small-mobile:pt-10 screen:pb-20 mobile:pb-10">
       <div className=" screen:pb-16 tablet:pb-10">
         <Header header="Bli kjent med våre kurs" />
       </div>
 
-      <div className="m-w-0 w-[90%] items-center justify-center m-auto screen:grid  screen:grid-cols-2  screen:gap-5 tablet:w-[98%] mobile:w-[95%] mobile:grid-cols-1">
+      <div className="m-w-0 items-center justify-center m-auto screen:grid  screen:grid-cols-2  screen:gap-5 screen:w-[98%] mobile:w-[95%] mobile:grid-cols-1 ">
         {CoursesDescriptionsMobile.map((item, id) => (
           <div
             className={
@@ -31,11 +31,11 @@ const AboutCoursesMobile = () => {
             }
             key={item.id}
           >
-            <div className="rgb ">
+            <div className="rgb  relative">
               <div className="px-1 pt-1 ">
-                <img src={item.image} alt="Fortnite" className="rounded-t-xl screen:h-[35vh] mobile:h-[30vh]" />
+                <img src={item.image} alt="Fortnite" className="rounded-t-xl h-[300px]" />
               </div>
-              <div className="flex flex-col items-center pt-3 pb-8 mobile:pb-4 screen:h-[50vh] mobile:h-[45vh] small-mobile:h-[50vh] bg-black mx-1 mb-1 rounded-b-xl ">
+              <div className="flex flex-col items-center pt-3 pb-8 mobile:pb-4  bg-black mx-1 mb-1 rounded-b-xl  ">
                 <span className="text-3xl font-bold small-mobile:text-2xl">
                   {item.title}
                 </span>
