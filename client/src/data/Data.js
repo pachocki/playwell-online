@@ -111,7 +111,7 @@ export const CoursesDescriptionsMobile = [
     id: 2,
     title: "Minecraft",
     description:
-      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle.",
+      "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle.Bli med oss !",
     image: require("../assets/minecraft-course.webp"),
     border:
       "border-purple-600 border-2 border-green-400 shadow-lg shadow-green-400",
@@ -121,7 +121,7 @@ export const CoursesDescriptionsMobile = [
     id: 3,
     title: "Robox",
     description:
-      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine ? Da er Robox det perfekte stedet for deg!",
+      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom . Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære . Er du interessert i å teste ut forskjellige spill , utvikle spillferdighetene dine ? Da er Robox det perfekte stedet for deg ! Bli med oss !",
     image: require("../assets/rocket-league2.webp"),
     border:
       "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
