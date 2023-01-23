@@ -22,7 +22,7 @@ const Comunity = () => {
         <img
           src={Planet}
           alt="planet"
-          className="animate-spin-slow hidden mobile:block mobile:w-[400px]  mobile:h-[390px] small-mobile:w-[300px] small-mobile:h-[300px] "
+          className="animate-spin-slow hidden mobile:block mobile:w-[400px]  mobile:h-[390px] small-mobile:w-[320px] small-mobile:h-[320px] "
         />
         <img
           className="w-[120px] h-[120px] rounded-full absolute top-[2%] left-[5%] z-20 laptop:left-12  screen:top-[18%] screen:left-[3%] tablet:w-[80px] tablet:h-[80px] mobile:w-[50px] mobile:h-[50px] mobile:left-[10%] mobile:top-[25%] small-mobile:left-[10%]"
