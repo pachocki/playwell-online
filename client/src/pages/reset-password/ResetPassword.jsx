@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
 //Axios
-import axios from "../../api/axios";
+import axios from "axios";
 
 const ResetPassword = () => {
   //Navigate
@@ -39,9 +39,10 @@ const ResetPassword = () => {
 
     try {
       const { data } = await axios.patch(
-        `/api/auth/passwordreset/${param.resetToken}`,
+        `https://pwo-mern-api.onrender.com/api/passwordreset/${param.resetToken}`,
         {
           password,
+          confirmPassword,
         },
         config
       );

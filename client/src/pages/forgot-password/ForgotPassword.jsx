@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 //Axios
-import axios from "../../api/axios";
+import axios from "axios";
 
 const ForgotPassword = () => {
   //State
@@ -19,7 +19,7 @@ const ForgotPassword = () => {
 
     try {
       const { data } = await axios.post(
-        "/api/auth/forgotpassword",
+        "https://pwo-mern-api.onrender.com/api/forgotpassword",
         { email },
         config
       );
