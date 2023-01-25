@@ -9,7 +9,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 
 //Images
-import Instructor from "../../../../assets/playwell-teacher2.webp";
+import Instructor from "../../../../assets/team/tg1.webp";
 import Scratch from "../../../../assets/koding/scratch-koding.webp";
 import Image1 from "../../../../assets/playwell-hero3.jpg";
 import Image2 from "../../../../assets/gallery/playing-kid2.webp";
@@ -99,7 +99,7 @@ const MinecraftGallery = () => {
           <StreamingChat
             image={Scratch}
             instructor={Instructor}
-            chat1="Hei alle sammen.I dag vi skal bygge Pac-Man :)"
+            chat1="Hei alle sammen.I dag vi skal bygge Treasure Island !"
             chat2="Hei:) Super !!"
           />
         </div>
