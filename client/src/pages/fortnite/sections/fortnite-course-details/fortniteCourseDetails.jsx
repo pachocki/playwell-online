@@ -17,7 +17,7 @@ const FortniteCourseDetails = () => {
           <div className="w-1/2 flex justify-center items-center mobile:w-full mobile:px-1 ">
             <p className=" w-2/3 text-4xl laptop:w-[90%] screen:w-full screen:text-2xl  mobile:font-thin mobile:text-lg small-mobile:text-[1rem]">
               Engasjere deltakere med en pedagogisk instruktør som veileder i
-              samarbeid, planlegging og prososial atferd.
+              samarbeid, planlegging og sosial atferd.
             </p>
             <span className="text-[26rem] text-[#ff000014]  absolute  text-center mobile:hidden">
               1

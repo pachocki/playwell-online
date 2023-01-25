@@ -17,7 +17,7 @@ const MinecraftCourseDetails = () => {
           <div className="w-1/2 flex justify-center items-center mobile:w-full mobile:px-1 ">
             <p className=" w-2/3 text-4xl laptop:w-[90%] screen:w-full screen:text-2xl  mobile:font-thin mobile:text-lg small-mobile:text-[1rem]">
               Engasjere deltakere med en pedagogisk instruktør som veileder i
-              samarbeid, planlegging og prososial atferd.
+              samarbeid, planlegging og sosial atferd.
             </p>
             <span className="text-[26rem] text-[#ff000014]  absolute  text-center mobile:hidden">
               1
@@ -33,10 +33,7 @@ const MinecraftCourseDetails = () => {
           image={Image1}
         />
         <CourseDetails
-          text="Organisere ulike typer utfordringer som lar deg utvikle
-            kreativitet og forbedre ferdighetene dine i spillet. Lær triks
-            som vil fremskynde konstruksjonen av interessante nye fargerike
-            verdener i Minecraft"
+          text="Organiser ulike utfordringer for å utvikle kreativiteten din og forbedre ferdighetene dine i Minecraft. Lær triksene som vil akselerere byggingen av interessante og fargerike nye verdener."
           number="3"
           image={Image2}
         />

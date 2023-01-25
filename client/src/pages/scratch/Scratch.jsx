@@ -23,7 +23,7 @@ const Scratch = () => {
       <CourseRecomendation
         text1="Er du interessert i spill og har lyst til å lage ditt eget spill??"
         text2="Har du lyst til å lære programmering og kunne tenke deg å jobbe i denne bransjen i fremtiden?"
-        text3=" Du leter etter den mest effektive måten å lære alt du trenger for å vokse opp dine spillferdigheter"
+        text3=" Du leter etter den mest effektive måten å lære alt du trenger for å forbedre dine spillferdigheter"
       />
      <ScratchCourseDetails/>
      <SubscriptionPlan/>

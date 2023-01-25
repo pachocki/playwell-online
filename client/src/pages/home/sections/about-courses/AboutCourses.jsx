@@ -147,7 +147,7 @@ const AboutCourses = () => {
             <StreamingChat
               image={Scratch}
               instructor={InstructorThree}
-              chat1="Hei alle sammen.I dag  skal vi lage Pacman ! "
+              chat1="Hei alle sammen.I dag  skal vi lage Treasure Island ! "
               chat2="Hei ! Wow så fantastisk !"
             />
           </div>

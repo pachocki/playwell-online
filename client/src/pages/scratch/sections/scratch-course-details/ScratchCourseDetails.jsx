@@ -50,7 +50,7 @@ const ScratchCourseDetails = () => {
           <div className="w-1/2 flex justify-center items-center mobile:w-full mobile:px-1 ">
             <p className=" w-2/3 text-4xl laptop:w-[90%] screen:w-full screen:text-2xl  mobile:font-thin mobile:text-lg small-mobile:text-[1rem]">
               Engasjere deltakere med en pedagogisk instruktør som veileder i
-              samarbeid, planlegging og prososial atferd.
+              samarbeid, planlegging og sosial atferd.
             </p>
             <span className="text-[26rem] text-[#ff000014]  absolute  text-center mobile:hidden">
               1
@@ -59,7 +59,7 @@ const ScratchCourseDetails = () => {
           <StreamCard image={Instructor} name="TG" />
         </div>
         <CourseDetails
-          text=" Vårt erfarne team av lærere vil lære deg hvordan å programmerer dine første spill i Scratch.Scratch er et kodespråk med et enkelt visuelt grensesnitt som lar unge brukere lage digitale historier, spill og animasjoner.
+          text=" Vårt erfarne team av lærere vil lære deg hvordan dere programmerer dine første spill i Scratch . Scratch er et kodespråk med et enkelt visuelt grensesnitt som lar unge brukere lage digitale historier, spill og animasjoner.
         "
           number="2"
           image={Image1}

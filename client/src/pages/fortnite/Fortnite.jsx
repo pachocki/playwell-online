@@ -22,7 +22,7 @@ const Maincraft = () => {
       <CourseRecomendation
         text1="Liker du å spille dataspill og møte nye mennesker med lignende interesser?"
         text2="Vil du spille på nivået til en profesjonell dataspiller?"
-        text3=" Du leter etter den mest effektive måten å lære alt du trenger for å vokse opp dine spillferdigheter"
+        text3=" Du leter etter den mest effektive måten å lære alt du trenger for å forbedre dine spillferdigheter"
       />
       <FortniteCourseDetails />
       <FortniteCourse/>
