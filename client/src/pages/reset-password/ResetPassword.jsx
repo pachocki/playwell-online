@@ -42,7 +42,7 @@ const ResetPassword = () => {
         `https://pwo-mern-api.onrender.com/api/passwordreset/${param.resetToken}`,
         {
           password,
-          confirmPassword,
+          confirmpassword: confirmPassword,
         },
         config
       );
