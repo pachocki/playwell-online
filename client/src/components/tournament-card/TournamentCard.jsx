@@ -14,11 +14,15 @@ const TournamentCard = (props) => {
         <div className="flex flex-col justify-between items-center text-left px-1 big-screen:text-2xl laptop:text-xl tablet:text-lg tablet:pb-1   mobile:text-base">
           <p>{props.text}</p>
           <div className="py-5">
-            <Link to={props.link}>
+            <a
+              rel="noopener noreferrer"
+              href="https://discord.gg/cUjtqQ6p8p"
+              target="_blank"
+            >
               <button className="font-bold text-xl py-2 px-5 bg-red-700 hover:opacity-80 rounded-xl tablet:text-sm ">
                 Bli med
               </button>
-            </Link>
+            </a>
           </div>
         </div>
       </div>
