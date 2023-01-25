@@ -63,7 +63,7 @@ const SubscriptionPlan = () => {
           priceId: price.id,
         }
       );
-      window.open(data);
+      window.location.href = data;
     } else {
       navigate("/login");
     }
