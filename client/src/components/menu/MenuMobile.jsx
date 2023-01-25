@@ -1,6 +1,10 @@
 import React, { useRef, useEffect, useState, useContext } from "react";
 //React Router
 import { Link, useNavigate } from "react-router-dom";
+
+//axios
+import axios from "axios";
+
 //Gsap Library
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -20,6 +24,19 @@ const MenuMobile = () => {
   const navigate = useNavigate();
   //Context
   const [state, setState] = useContext(UserContext);
+  const [subscriptions, setSubscriptions] = useState([]);
+
+  useEffect(() => {
+    const getSubscriptions = async () => {
+      const { data } = await axios.get(
+        "https://pwo-mern-api.onrender.com/api/subscriptions"
+      );
+      setSubscriptions(data.data);
+    };
+
+    if (state && state.token) getSubscriptions();
+  }, [state && state.token]);
+
   //Logout
 
   const logout = () => {
@@ -131,9 +148,9 @@ const MenuMobile = () => {
             <li className="hover:opacity-50 transition ease-in-out delay-150">
               <Link to="/omoss">Om oss</Link>
             </li>
-            <li className="hover:opacity-50 transition ease-in-out delay-150">
-              <Link to="/subscription">Medlemskap</Link>
-            </li>
+            {subscriptions.length >= 2 ? (null) : (<li className="hover:opacity-50 transition ease-in-out delay-150">
+            <Link to="/subscription">Meld deg på</Link> 
+          </li>)  }
             {state && state.token ? (
               <>
                 <li>
