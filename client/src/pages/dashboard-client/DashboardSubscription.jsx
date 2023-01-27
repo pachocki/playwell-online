@@ -9,7 +9,7 @@ import axios from "axios";
 import Spiner from "../../components/spiner/Spiner";
 import SubscriptionPlan from "../../components/subscription-plan/SubscriptionPlan";
 
-import { useNavigate , Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 const DashboardAbonament = () => {
   const navigate = useNavigate();
@@ -46,6 +46,17 @@ const DashboardAbonament = () => {
   return (
     <div>
       {subscriptions ? (
+        <div className="bg-zinc-700/20 backdrop-blur-xl  w-full  rounded-b-xl   overflow-hidden relative py-2 tablet:mt-1 mobile:pb-0 mobile:py-0">
+          <div className="py-5 mobile:pt-5 ">
+            <h1 className="text-5xl text-center font-bold laptop:text-4xl screen:text-3xl mobile:text-2xl">
+              Beklager du har ikke abonnement ...
+              <br />
+              Derfor...
+            </h1>
+          </div>
+          <SubscriptionPlan />
+        </div>
+      ) : (
         subscriptions.map((sub) => (
           <div key={sub.id}>
             <div className="bg-zinc-700/20 backdrop-blur-xl  w-full  rounded-b-xl   overflow-hidden relative py-10 tablet:mt-1 mobile:pb-0 mobile:py-0">
@@ -93,26 +104,17 @@ const DashboardAbonament = () => {
                     >
                       Manage Subscription
                     </button>
-                    <Link to ="/Subscription"><button className="py-2 px-3 text-2xl bg-red-700  hover:opacity-80 mobile:px-1 mobile:py-1 mobile:text-lg rounded-xl">
-                      Upgrade
-                    </button></Link>
+                    <Link to="/Subscription">
+                      <button className="py-2 px-3 text-2xl bg-red-700  hover:opacity-80 mobile:px-1 mobile:py-1 mobile:text-lg rounded-xl">
+                        Upgrade
+                      </button>
+                    </Link>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         ))
-      ) : (
-        <div className="bg-zinc-700/20 backdrop-blur-xl  w-full  rounded-b-xl   overflow-hidden relative py-2 tablet:mt-1 mobile:pb-0 mobile:py-0">
-          <div className="py-5 mobile:pt-5 ">
-            <h1 className="text-5xl text-center font-bold laptop:text-4xl screen:text-3xl mobile:text-2xl">
-              Beklager du har ikke abonnement ...
-              <br />
-              Derfor...
-            </h1>
-          </div>
-          <SubscriptionPlan />
-        </div>
       )}
     </div>
   );
