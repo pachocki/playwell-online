@@ -45,7 +45,7 @@ const DashboardAbonament = () => {
 
   return (
     <div>
-      {subscriptions.length < 0 ? (
+      {subscriptions.length === 0 ? (
         <div className="bg-zinc-700/20 backdrop-blur-xl  w-full  rounded-b-xl   overflow-hidden relative py-2 tablet:mt-1 mobile:pb-0 mobile:py-0">
           <div className="py-5 mobile:pt-5 ">
             <h1 className="text-5xl text-center font-bold laptop:text-4xl screen:text-3xl mobile:text-2xl">
