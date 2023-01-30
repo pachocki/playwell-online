@@ -95,30 +95,23 @@ function App() {
     }
   }, []);
 
-  let timerId;
+const [originalTabName, setOriginalTabName] = useState(window.name);
+const [isTabClosed, setIsTabClosed] = useState(false);
 
-  const resetTimer = () => {
-    clearTimeout(timerId);
-    timerId = setTimeout(() => {
-      // Log out the user here
-      localStorage.removeItem("auth");
-      sessionStorage.clear();
-    }, 20 * 60 * 1000);
+useEffect(() => {
+  const handleVisibilityChange = () => {
+    if (document.hidden && originalTabName === window.name) {
+      setIsTabClosed(true);
+    } else {
+      setIsTabClosed(false);
+    }
   };
 
-  useEffect(() => {
-    document.addEventListener("mousemove", resetTimer);
-    document.addEventListener("keypress", resetTimer);
-
-    return () => {
-      document.removeEventListener("mousemove", resetTimer);
-      document.removeEventListener("keypress", resetTimer);
-    };
-  }, []);
-
-  useEffect(() => {
-    resetTimer();
-  }, []);
+  document.addEventListener("visibilitychange", handleVisibilityChange);
+  return () => {
+    document.removeEventListener("visibilitychange", handleVisibilityChange);
+  };
+}, []);
 
   return <RouterProvider router={router} />;
 }
