@@ -16,7 +16,7 @@ the user experience, we used GSAP, a powerful JavaScript animation library.
  For payment processing, we used Stripe, a popular payment gateway that allows users to make payments securely and easily. With Stripe, we can accept 
  a wide range of payment methods, including credit and debit cards, Apple Pay, Google Pay, and more.
 
- Overall, Playwell Online is a comprehensive platform that provides a fun and educational experience for kids while also giving them the opportunity to learn coding and problem-solving skills in a game-based environment.
+Overall, Playwell Online is a comprehensive platform that provides a fun and educational experience for kids while also giving them the opportunity to learn coding and problem-solving skills in a game-based environment.
 
 # Getting started
 To run the website locally, you will need to have Node.js and MongoDB installed. Then, clone the repository and run npm install to install the necessary dependencies. After that, you can start the development server with npm start.
