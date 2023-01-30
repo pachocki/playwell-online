@@ -119,7 +119,7 @@ const PricingCard = () => {
                   Koding
                 </li>
                 <li className="text-3xl tablet:text-2xl mobile:text-xl small-mobile:text-lg">
-                  Robox
+                  Roblox
                 </li>
               </ul>
               <p className="text-xl pt-5 underline tablet:text-lg mobile:text-sm">

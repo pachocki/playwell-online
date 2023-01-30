@@ -12,7 +12,7 @@ import InstructorTwo from "../../../../assets/playwell-teacher2.webp";
 import InstructorThree from "../../../../assets/playwell-teacher3.webp";
 import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.webp";
 import Minecraft from "../../../../assets/minecraft/minecraft-gameplay.webp";
-import Robox from "../../../../assets/robox/robox-gameplay.webp";
+import Roblox from "../../../../assets/Roblox/Roblox-gameplay.webp";
 import Scratch from "../../../../assets/koding/scratch-koding.webp";
 //Data
 import { CoursesDescriptions } from "../../../../data/Data";
@@ -122,14 +122,14 @@ const AboutCourses = () => {
         </div>
         <div className="cours__showcase  w-screen h-screen flex justify-center align-center  bg-black/80  rounded-t-xl tablet:flex-col-reverse  tablet:gap-0 mobile:gap-6 mobile:px-2 ">
           <CoursesDescription
-            title="Robox"
-            text={CoursesDescriptions[0].robox}
-            link="/robox"
+            title="Roblox"
+            text={CoursesDescriptions[0].Roblox}
+            link="/Roblox"
           />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>
             <StreamingChat
-              image={Robox}
+              image={Roblox}
               instructor={InstructorTwo}
               chat1="Hei alle sammen.I dag vi skal spile Rl :)"
               chat2="Hei:) Så kjekt!"

@@ -48,7 +48,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="/stripe/success" element={<StripeSuccess />} />
         <Route path="/minecraft" element={<Minecraft />} />
-        <Route path="/robox" element={<GamingClub />} />
+        <Route path="/Roblox" element={<GamingClub />} />
         <Route path="/fortnite" element={<Fortnite />} />
         <Route path="/koding" element={<Scratch />} />
         <Route path="/omoss" element={<AboutUs />} />
@@ -95,23 +95,37 @@ function App() {
     }
   }, []);
 
-const [originalTabName, setOriginalTabName] = useState(window.name);
-const [isTabClosed, setIsTabClosed] = useState(false);
+  const [originalTabName, setOriginalTabName] = useState(window.name);
+  const [isTabClosed, setIsTabClosed] = useState(false);
 
-useEffect(() => {
-  const handleVisibilityChange = () => {
-    if (document.hidden && originalTabName === window.name) {
-      setIsTabClosed(true);
-    } else {
-      setIsTabClosed(false);
+  const logout = () => {
+    localStorage.removeItem("auth");
+    sessionStorage.clear();
+  };
+
+  useEffect(() => {
+    const handleVisibilityChange = () => {
+      if (document.hidden && originalTabName === window.name) {
+        setIsTabClosed(true);
+      } else {
+        setIsTabClosed(false);
+      }
+    };
+
+    document.addEventListener("visibilitychange", handleVisibilityChange);
+
+    setTimeout(logout, 5 * 60 * 1000);
+
+    return () => {
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isTabClosed) {
+      logout();
     }
-  };
-
-  document.addEventListener("visibilitychange", handleVisibilityChange);
-  return () => {
-    document.removeEventListener("visibilitychange", handleVisibilityChange);
-  };
-}, []);
+  }, [isTabClosed]);
 
   return <RouterProvider router={router} />;
 }

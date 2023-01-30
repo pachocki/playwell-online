@@ -20,7 +20,7 @@ export const Courses = [
   {
     id: 3,
     name: "GamingKlubb",
-    image: require("../assets/cards/robox.webp"),
+    image: require("../assets/cards/Roblox.webp"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
@@ -89,8 +89,8 @@ export const CoursesDescriptions = [
     minecraft:
       "Vårt Minecraft-kurs gir deg muligheten til å utforske kreativiteten din og skape en ny verden. Under ledelse av våre erfarne lærere, vil du lære å bygge og utforme imponerende strukturer og skape spennende spill og aktiviteter på utvalgte kart. Minecraft Adventure gir deg muligheten til å beseire alt fra spøkelseshus til jungeleventyr. Kurset tilbyr en hyggelig atmosfære åpen for alle, der alle føler seg trygge.",
 
-    robox:
-      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine og samtidig få en gjeng å spille med? Da er Robox det perfekte stedet for deg.",
+    Roblox:
+      "Roblox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom. Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære. Er du interessert i å teste ut forskjellige spill, utvikle spillferdighetene dine og samtidig få en gjeng å spille med? Da er Roblox det perfekte stedet for deg.",
 
     koding:
       "På Discord vil vi lære deltakerne hvordan man bygger et spill ved hjelp av Scratch. Vi vil fokusere på grunnleggende programmeringskonsepter som løkker og IF-setninger, og hvordan man kan bruke dem til å bygge et spill. Deltakerne vil også lære å arbeide med variabler og funksjoner, noe som er nødvendig for å bygge et fungerende spill.Det er viktig å merke seg at å lære å kode kan åpne mange dører for unge i fremtiden.",
@@ -119,13 +119,13 @@ export const CoursesDescriptionsMobile = [
   },
   {
     id: 3,
-    title: "Robox",
+    title: "Roblox",
     description:
-      "Robox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom . Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære . Er du interessert i å teste ut forskjellige spill , utvikle spillferdighetene dine ? Da er Robox det perfekte stedet for deg ! Bli med oss !",
+      "Roblox-programmet gir deltakerne muligheten til å delta i ukentlige spillsesjoner sammen med andre spillinteresserte barn og ungdom . Deltakerne vil få instruksjon av en erfaren spillinstruktør som vil sette i gang morsomme aktiviteter og skape en sosial gaming-atmosfære . Er du interessert i å teste ut forskjellige spill , utvikle spillferdighetene dine ? Da er Roblox det perfekte stedet for deg ! Bli med oss !",
     image: require("../assets/rocket-league2.webp"),
     border:
       "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
-    link: "/robox",
+    link: "/Roblox",
   },
   {
     id: 4,

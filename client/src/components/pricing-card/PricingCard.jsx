@@ -23,7 +23,7 @@ const PricingCard = ({ price, handleSubscription, userSubscriptions }) => {
           <li className="text-3xl tablet:text-2xl mobile:text-xl small-mobile:text-lg">Fortnite</li>
 
           <li className="text-3xl tablet:text-2xl mobile:text-xl small-mobile:text-lg">Koding</li>
-          <li className="text-3xl tablet:text-2xl mobile:text-xl small-mobile:text-lg">Robox</li>
+          <li className="text-3xl tablet:text-2xl mobile:text-xl small-mobile:text-lg">Roblox</li>
         </>
       );
     }
