@@ -20,7 +20,7 @@ export const Courses = [
   {
     id: 3,
     name: "GamingKlubb",
-    image: require("../assets/cards/Robox.webp"),
+    image: require("../assets/cards/roblox.webp"),
     day1: "Mandag",
     day2: "Fredag",
     time1: "20:30",
