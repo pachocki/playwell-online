@@ -12,7 +12,7 @@ import InstructorTwo from "../../../../assets/playwell-teacher2.webp";
 import InstructorThree from "../../../../assets/playwell-teacher3.webp";
 import Fortnite from "../../../../assets/fortnite/fortnite-gameplay2.webp";
 import Minecraft from "../../../../assets/minecraft/minecraft-gameplay.webp";
-import Roblox from "../../../../assets/Roblox/Roblox-gameplay.webp";
+import Roblox from "../../../../assets/roblox/roblox-gameplay.webp";
 import Scratch from "../../../../assets/koding/scratch-koding.webp";
 //Data
 import { CoursesDescriptions } from "../../../../data/Data";
