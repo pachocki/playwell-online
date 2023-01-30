@@ -1,5 +1,6 @@
-import React, { useState, useEffect,useContext } from "react";
-
+import React, { useState, useEffect , useContext } from "react";
+//Context
+import { UserContext } from "./context/context";
 //Styles
 import "./index.css";
 import "./styles.css";
@@ -9,10 +10,9 @@ import {
   RouterProvider,
   createBrowserRouter,
   Route,
-  createRoutesFromElements,useNavigate
+  createRoutesFromElements,
+  useNavigate
 } from "react-router-dom";
-
-import {UserContext} from "./context/context"
 
 //Routes
 import {
@@ -88,9 +88,11 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  const navigate = useNavigate();
-  const [state, setState] = useContext(UserContext);
   const [user, setUser] = useState();
+    //Navigate
+    const navigate = useNavigate();
+    //Context
+    const [state, setState] = useContext(UserContext);
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
@@ -121,17 +123,17 @@ function App() {
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
+    setTimeout(logout, 5 * 60 * 1000);
+
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
   useEffect(() => {
-    setTimeout(() => {
-      if (isTabClosed) {
-        logout();
-      }
-    }, 5 * 60 * 1000);
+    if (isTabClosed) {
+      logout();
+    }
   }, [isTabClosed]);
 
   return <RouterProvider router={router} />;
