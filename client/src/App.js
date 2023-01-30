@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
 //Styles
 import "./index.css";
@@ -86,7 +86,7 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  const [user,setUser] = useState()
+  const [user, setUser] = useState();
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
@@ -94,34 +94,20 @@ function App() {
       setUser(foundUser);
     }
   }, []);
-  const [isTabClosed, setIsTabClosed] = useState(false);
   useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        setIsTabClosed(true);
-      } else {
-        setIsTabClosed(false);
-      }
+    const logout = () => {
+      localStorage.removeItem("auth");
+      sessionStorage.clear();
     };
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+    window.addEventListener("beforeunload", logout);
+
     return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      window.removeEventListener("beforeunload", logout);
     };
   }, []);
 
-  useEffect(() => {
-    if (isTabClosed) {
-      // Log out the user here
-      localStorage.removeItem('auth');
-      sessionStorage.clear();
-    }
-  }, [isTabClosed]);
-
-
-
-  return(<RouterProvider router={router} />) ;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
-
