@@ -48,7 +48,7 @@ const DashboardMenu = () => {
           </Link>
           <Link to="/dashboard-subscription">
             <FaWallet className=" inline-block text-5xl mt-7 cursor-pointer mb-2 hover:opacity-20 transition-all delay-150 screen:text-4xl  mobile:text-2xl" />
-            <p className="mobile:hidden">Abonament</p>
+            <p className="mobile:hidden">Abonnement</p>
           </Link>
           <a
             rel="noopener noreferrer"

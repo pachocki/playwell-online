@@ -1,4 +1,4 @@
-import React , {useState,useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 
 //Styles
 import "./index.css";
@@ -86,7 +86,7 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  const [user,setUser] = useState()
+  const [user, setUser] = useState();
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
@@ -94,34 +94,33 @@ function App() {
       setUser(foundUser);
     }
   }, []);
-  const [isTabClosed, setIsTabClosed] = useState(false);
-  useEffect(() => {
-    const handleVisibilityChange = () => {
-      if (document.hidden) {
-        setIsTabClosed(true);
-      } else {
-        setIsTabClosed(false);
-      }
-    };
 
-    document.addEventListener("visibilitychange", handleVisibilityChange);
+  let timerId;
+
+  const resetTimer = () => {
+    clearTimeout(timerId);
+    timerId = setTimeout(() => {
+      // Log out the user here
+      localStorage.removeItem("auth");
+      sessionStorage.clear();
+    }, 20 * 60 * 1000);
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousemove", resetTimer);
+    document.addEventListener("keypress", resetTimer);
+
     return () => {
-      document.removeEventListener("visibilitychange", handleVisibilityChange);
+      document.removeEventListener("mousemove", resetTimer);
+      document.removeEventListener("keypress", resetTimer);
     };
   }, []);
 
   useEffect(() => {
-    if (isTabClosed) {
-      // Log out the user here
-      localStorage.removeItem('auth');
-      sessionStorage.clear();
-    }
-  }, [isTabClosed]);
+    resetTimer();
+  }, []);
 
-
-
-  return(<RouterProvider router={router} />) ;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
-
