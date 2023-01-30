@@ -1,8 +1,4 @@
-import React, { useState, useEffect, useContext } from "react";
-import { useNavigate } from "react-router-dom";
-
-//Context
-import { UserContext } from "./context/context";
+import React, { useState, useEffect,useContext } from "react";
 
 //Styles
 import "./index.css";
@@ -13,8 +9,10 @@ import {
   RouterProvider,
   createBrowserRouter,
   Route,
-  createRoutesFromElements,
+  createRoutesFromElements,useNavigate
 } from "react-router-dom";
+
+import {UserContext} from "./context/context"
 
 //Routes
 import {
@@ -91,8 +89,8 @@ const router = createBrowserRouter(
 );
 function App() {
   const navigate = useNavigate();
-  const [user, setUser] = useState();
   const [state, setState] = useContext(UserContext);
+  const [user, setUser] = useState();
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
