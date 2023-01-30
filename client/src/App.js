@@ -1,6 +1,5 @@
-import React, { useState, useEffect , useContext } from "react";
-//Context
-import { UserContext } from "./context/context";
+import React , {useState,useEffect} from 'react';
+
 //Styles
 import "./index.css";
 import "./styles.css";
@@ -11,7 +10,6 @@ import {
   createBrowserRouter,
   Route,
   createRoutesFromElements,
-  useNavigate
 } from "react-router-dom";
 
 //Routes
@@ -50,7 +48,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="/stripe/success" element={<StripeSuccess />} />
         <Route path="/minecraft" element={<Minecraft />} />
-        <Route path="/roblox" element={<GamingClub />} />
+        <Route path="/robox" element={<GamingClub />} />
         <Route path="/fortnite" element={<Fortnite />} />
         <Route path="/koding" element={<Scratch />} />
         <Route path="/omoss" element={<AboutUs />} />
@@ -88,11 +86,7 @@ const router = createBrowserRouter(
   )
 );
 function App() {
-  const [user, setUser] = useState();
-    //Navigate
-    const navigate = useNavigate();
-    //Context
-    const [state, setState] = useContext(UserContext);
+  const [user,setUser] = useState()
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
@@ -100,21 +94,10 @@ function App() {
       setUser(foundUser);
     }
   }, []);
-
-  const [originalTabName, setOriginalTabName] = useState(window.name);
   const [isTabClosed, setIsTabClosed] = useState(false);
-
-  const logout = () => {
-    setState({ user: {}, token: "" });
-    localStorage.removeItem("auth");
-    navigate("/");
-    window.scrollTo(0, 0);
-    window.location.reload();
-  };
-
   useEffect(() => {
     const handleVisibilityChange = () => {
-      if (document.hidden && originalTabName === window.name) {
+      if (document.hidden) {
         setIsTabClosed(true);
       } else {
         setIsTabClosed(false);
@@ -122,9 +105,6 @@ function App() {
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
-
-    setTimeout(logout, 5 * 60 * 1000);
-
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
@@ -132,11 +112,16 @@ function App() {
 
   useEffect(() => {
     if (isTabClosed) {
-      logout();
+      // Log out the user here
+      localStorage.removeItem('auth');
+      sessionStorage.clear();
     }
   }, [isTabClosed]);
 
-  return <RouterProvider router={router} />;
+
+
+  return(<RouterProvider router={router} />) ;
 }
 
 export default App;
+
