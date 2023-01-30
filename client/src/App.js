@@ -114,17 +114,17 @@ function App() {
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
 
-    setTimeout(logout, 5 * 60 * 1000);
-
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
   useEffect(() => {
-    if (isTabClosed) {
-      logout();
-    }
+    setTimeout(() => {
+      if (isTabClosed) {
+        logout();
+      }
+    }, 5 * 60 * 1000);
   }, [isTabClosed]);
 
   return <RouterProvider router={router} />;
