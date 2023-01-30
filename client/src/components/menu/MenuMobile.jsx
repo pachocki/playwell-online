@@ -148,9 +148,11 @@ const MenuMobile = () => {
             <li className="hover:opacity-50 transition ease-in-out delay-150">
               <Link to="/omoss">Om oss</Link>
             </li>
-            {subscriptions.length >= 2 ? (null) : (<li className="hover:opacity-50 transition ease-in-out delay-150">
-            <Link to="/subscription">Meld deg på</Link> 
-          </li>)  }
+            {subscriptions.length >= 2 ? null : (
+              <li className="hover:opacity-50 transition ease-in-out delay-150">
+                <Link to="/subscription">Meld deg på</Link>
+              </li>
+            )}
             {state && state.token ? (
               <>
                 <li>

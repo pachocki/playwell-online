@@ -1,4 +1,8 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import { useNavigate } from "react-router-dom";
+
+//Context
+import { UserContext } from "./context/context";
 
 //Styles
 import "./index.css";
@@ -86,7 +90,9 @@ const router = createBrowserRouter(
   )
 );
 function App() {
+  const navigate = useNavigate();
   const [user, setUser] = useState();
+  const [state, setState] = useContext(UserContext);
   useEffect(() => {
     const loggedInUser = localStorage.getItem("auth");
     if (loggedInUser) {
@@ -99,8 +105,11 @@ function App() {
   const [isTabClosed, setIsTabClosed] = useState(false);
 
   const logout = () => {
+    setState({ user: {}, token: "" });
     localStorage.removeItem("auth");
-    sessionStorage.clear();
+    navigate("/");
+    window.scrollTo(0, 0);
+    window.location.reload();
   };
 
   useEffect(() => {
