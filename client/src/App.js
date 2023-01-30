@@ -87,25 +87,35 @@ const router = createBrowserRouter(
 );
 function App() {
   const [user, setUser] = useState();
+  const [isTabClosed, setIsTabClosed] = useState(false);
+
+  const logout = () => {
+    // Perform logout logic here
+    localStorage.removeItem("auth");
+    sessionStorage.clear();
+    window.location.reload();
+  };
+
   useEffect(() => {
-    const loggedInUser = localStorage.getItem("auth");
-    if (loggedInUser) {
-      const foundUser = JSON.parse(loggedInUser);
-      setUser(foundUser);
-    }
-  }, []);
-  useEffect(() => {
-    const logout = () => {
-      localStorage.removeItem("auth");
-      sessionStorage.clear();
+    const handleVisibilityChange = () => {
+      if (document.hidden) {
+        setIsTabClosed(true);
+      } else {
+        setIsTabClosed(false);
+      }
     };
 
-    window.addEventListener("beforeunload", logout);
-
+    document.addEventListener("visibilitychange", handleVisibilityChange);
     return () => {
-      window.removeEventListener("beforeunload", logout);
+      document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
+
+  useEffect(() => {
+    if (isTabClosed) {
+      logout();
+    }
+  }, [isTabClosed]);
 
   return <RouterProvider router={router} />;
 }
