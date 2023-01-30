@@ -87,10 +87,10 @@ const router = createBrowserRouter(
 );
 function App() {
   const [user, setUser] = useState();
+  const [originalTabName, setOriginalTabName] = useState(window.name);
   const [isTabClosed, setIsTabClosed] = useState(false);
 
   const logout = () => {
-    // Perform logout logic here
     localStorage.removeItem("auth");
     sessionStorage.clear();
     window.location.reload();
@@ -98,7 +98,7 @@ function App() {
 
   useEffect(() => {
     const handleVisibilityChange = () => {
-      if (document.hidden) {
+      if (document.hidden && originalTabName === window.name) {
         setIsTabClosed(true);
       } else {
         setIsTabClosed(false);
@@ -106,15 +106,18 @@ function App() {
     };
 
     document.addEventListener("visibilitychange", handleVisibilityChange);
+
     return () => {
       document.removeEventListener("visibilitychange", handleVisibilityChange);
     };
   }, []);
 
   useEffect(() => {
-    if (isTabClosed) {
-      logout();
-    }
+    setTimeout(() => {
+      if (isTabClosed) {
+        logout();
+      }
+    }, 5 * 60 * 1000);
   }, [isTabClosed]);
 
   return <RouterProvider router={router} />;
