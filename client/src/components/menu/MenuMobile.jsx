@@ -134,7 +134,7 @@ const MenuMobile = () => {
               <Link to="/koding">Koding</Link>
             </li>
             <li className="hover:opacity-50 transition ease-in-out delay-150">
-              <Link to="/Roblox">Roblox</Link>
+              <Link to="/roblox">Roblox</Link>
             </li>
             <li className="hover:opacity-50 transition ease-in-out delay-150">
               <a

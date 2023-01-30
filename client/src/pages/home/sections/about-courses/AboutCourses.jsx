@@ -124,7 +124,7 @@ const AboutCourses = () => {
           <CoursesDescription
             title="Roblox"
             text={CoursesDescriptions[0].Roblox}
-            link="/Roblox"
+            link="/roblox"
           />
           <div className="w-1/2 flex justify-center items-center relative tablet:w-full">
             <div className="absolute  w-full h-[80%]  top-28  from-blue-600/80 via-teal-500/80  to-purple-500/80 bg-gradient-to-r   blur-2xl laptop:h-[75%] screen:h-[70%] screen:top-32  tablet:top-0 tablet:w-[75%]  tablet:h-full mobile:w-full mobile:h-[90%] mobile:top-3"></div>

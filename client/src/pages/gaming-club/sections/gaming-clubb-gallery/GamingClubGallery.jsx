@@ -7,7 +7,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/all";
 //Images
 import Instructor from "../../../../assets/playwell-teacher2.webp";
-import GamingClub from "../../../../assets/Roblox/Roblox-gameplay.webp";
+import GamingClub from "../../../../assets/roblox/roblox-gameplay.webp";
 import Image1 from "../../../../assets/playwell-hero3.jpg";
 import Image2 from "../../../../assets/gallery/playing-kid2.webp";
 import Image3 from "../../../../assets/gallery/playing-kid3.webp";

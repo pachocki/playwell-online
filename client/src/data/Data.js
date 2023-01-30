@@ -125,7 +125,7 @@ export const CoursesDescriptionsMobile = [
     image: require("../assets/rocket-league2.webp"),
     border:
       "border-purple-600 border-2 border-pink-600 shadow-lg shadow-pink-600",
-    link: "/Roblox",
+    link: "/roblox",
   },
   {
     id: 4,

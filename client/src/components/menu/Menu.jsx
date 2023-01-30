@@ -55,7 +55,7 @@ useEffect(() => {
             <NavLink to="/koding">Koding</NavLink>
           </li>
           <li className="hover:opacity-50 transition ease-in-out delay-150">
-            <NavLink to="/Roblox">Roblox</NavLink>
+            <NavLink to="/roblox">Roblox</NavLink>
           </li>
           <li className="hover:opacity-50 transition ease-in-out delay-150">
             <a
