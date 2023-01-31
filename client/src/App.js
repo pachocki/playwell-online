@@ -46,7 +46,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
       <Route errorElement={<ErrorPage />}>
         <Route index element={<Home />} />
-        <Route path="/stripe/success" element={<StripeSuccess />} />
         <Route path="/minecraft" element={<Minecraft />} />
         <Route path="/roblox" element={<GamingClub />} />
         <Route path="/fortnite" element={<Fortnite />} />

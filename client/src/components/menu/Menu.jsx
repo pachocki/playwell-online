@@ -1,5 +1,5 @@
-import React, { useContext , useEffect , useState } from "react";
-import { NavLink, Link,} from "react-router-dom";
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink, Link } from "react-router-dom";
 import axios from "axios";
 
 //Logo
@@ -12,23 +12,20 @@ import { UserContext } from "../../context/context";
 import MenuMobile from "./MenuMobile";
 import Dropdown from "../dropdown/Dropdown";
 
-
-
 const Menu = ({ showMenu, isOpen }) => {
-const [state, setState] = useContext(UserContext);
-const [subscriptions, setSubscriptions] = useState([]);
+  const [state, setState] = useContext(UserContext);
+  const [subscriptions, setSubscriptions] = useState([]);
 
-useEffect(() => {
-  const getSubscriptions = async () => {
-    const { data } = await axios.get(
-      "https://pwo-mern-api.onrender.com/api/subscriptions"
-    );
-    setSubscriptions(data.data);
-  };
+  useEffect(() => {
+    const getSubscriptions = async () => {
+      const { data } = await axios.get(
+        "https://pwo-mern-api.onrender.com/api/subscriptions"
+      );
+      setSubscriptions(data.data);
+    };
 
-  if (state && state.token) getSubscriptions();
-}, [state && state.token]);
-
+    if (state && state.token) getSubscriptions();
+  }, [state && state.token]);
 
   return (
     <div>
@@ -69,9 +66,11 @@ useEffect(() => {
           <li className="hover:opacity-50 transition ease-in-out delay-150">
             <NavLink to="/omoss">Om oss</NavLink>
           </li>
-         {subscriptions.length >= 2 ? (null) : (<li className="hover:opacity-50 transition ease-in-out delay-150">
-            <NavLink to="/subscription">Meld deg på</NavLink> 
-          </li>)  }
+          {subscriptions.length >= 2 ? null : (
+            <li className="hover:opacity-50 transition ease-in-out delay-150">
+              <NavLink to="/subscription">Meld deg på</NavLink>
+            </li>
+          )}
         </ul>
         <ul className="big-screen:flex big-screen:gap-5 big-screen:text-2xl big-screen:items-center big-screen:font-thick laptop:text-xl laptop:gap-5 screen:hidden">
           {state && state.token ? (
