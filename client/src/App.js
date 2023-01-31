@@ -48,7 +48,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="/stripe/success" element={<StripeSuccess />} />
         <Route path="/minecraft" element={<Minecraft />} />
-        <Route path="/robox" element={<GamingClub />} />
+        <Route path="/roblox" element={<GamingClub />} />
         <Route path="/fortnite" element={<Fortnite />} />
         <Route path="/koding" element={<Scratch />} />
         <Route path="/omoss" element={<AboutUs />} />

@@ -30,7 +30,7 @@ const TextSlide = () => {
     })
   return (
     <div className="text-slide-container grid gap-2 pt-40 pb-60 laptop:pt-20 laptop:pb-32 screen:pb-20 overflow-hidden uppercase font-bold  mobile:pt-10 mobile:pb-12">
-      <span className="text-slide text-slide-one text-[#50fdf2] text-[10rem] whitespace-nowrap leading-[120px] screen:text-8xl mobile:text-7xl ">
+      <span className="text-slide text-slide-one text-[#f61aa4] text-[10rem] whitespace-nowrap leading-[120px] screen:text-8xl mobile:text-7xl ">
         Playwell Playwell Playwell Playwell Playwell Playwell Playwell Playwell
         Playwell Playwell Playwell Playwell Playwell Playwell Playwell Playwell
         Playwell Playwell Playwell Playwell Playwell Playwell Playwell Playwell
@@ -39,7 +39,7 @@ const TextSlide = () => {
         Playwell Playwell Playwell Playwell Playwell Playwell Playwell Playwell
       </span>
       <div className=" flex gap-2 relative text-slide-two uppercase font-bold">
-      <h1 className="text-slide  whitespace-nowrap text-[#d52eff] leading-[120px] text-[10rem] screen:text-8xl mobile:text-7xl  ">
+      <h1 className="text-slide  whitespace-nowrap text-[#9eb5f6] leading-[120px] text-[10rem] screen:text-8xl mobile:text-7xl  ">
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
@@ -49,7 +49,7 @@ const TextSlide = () => {
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE
       </h1>
-      <h1 className="text-slide text-[10rem] text-[#d52eff] whitespace-nowrap leading-[120px] right-[100%] top-0 absolute screen:text-8xl mobile:text-7xl px-2">
+      <h1 className="text-slide text-[10rem] text-[#9eb5f6] whitespace-nowrap leading-[120px] right-[100%] top-0 absolute screen:text-8xl mobile:text-7xl px-2">
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
