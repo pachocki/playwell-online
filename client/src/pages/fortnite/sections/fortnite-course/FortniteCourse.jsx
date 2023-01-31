@@ -71,7 +71,7 @@ export default function Technology() {
           ))}
         </div>
         <div className="w-1/2 mobile:w-full">
-        <div className="w-full h-[80vh] flex items-end bg-fortnite-background  bg-cover bg-center bg-no-repeat rounded-xl screen:h-[90vh] screen:bg-[-300px_0] mobile:h-[30vh] mobile:bg-center "></div>
+        <div className="w-full h-[80vh] flex items-end bg-fortnite-courses  bg-cover bg-left bg-no-repeat rounded-xl screen:h-[90vh]   mobile:h-[30vh] mobile:bg-center "></div>
         </div>
       </div>
     </div>

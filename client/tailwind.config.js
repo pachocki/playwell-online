@@ -29,6 +29,8 @@ module.exports = {
         "error-page": "url('../src/assets/hero/404page.webp')",
         "fortnite-background":
           "url('../src/assets/fortnite/fortnite-background.webp')",
+          "fortnite-courses":
+          "url('../src/assets/fortnite/fortnite-courses.png')",
         "paralax":  "url('../src/assets/fortnite/fortnite-paralax.webp')",
       }),
       animation: {

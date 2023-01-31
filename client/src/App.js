@@ -48,7 +48,7 @@ const router = createBrowserRouter(
         <Route index element={<Home />} />
         <Route path="/stripe/success" element={<StripeSuccess />} />
         <Route path="/minecraft" element={<Minecraft />} />
-        <Route path="/roblox" element={<GamingClub />} />
+        <Route path="/robox" element={<GamingClub />} />
         <Route path="/fortnite" element={<Fortnite />} />
         <Route path="/koding" element={<Scratch />} />
         <Route path="/omoss" element={<AboutUs />} />
@@ -87,13 +87,19 @@ const router = createBrowserRouter(
 );
 function App() {
   const [user, setUser] = useState();
+  useEffect(() => {
+    const loggedInUser = localStorage.getItem("auth");
+    if (loggedInUser) {
+      const foundUser = JSON.parse(loggedInUser);
+      setUser(foundUser);
+    }
+  }, []);
   const [originalTabName, setOriginalTabName] = useState(window.name);
   const [isTabClosed, setIsTabClosed] = useState(false);
 
   const logout = () => {
     localStorage.removeItem("auth");
     sessionStorage.clear();
-    window.location.reload();
   };
 
   useEffect(() => {
