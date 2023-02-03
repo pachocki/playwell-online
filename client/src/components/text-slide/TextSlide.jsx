@@ -39,7 +39,7 @@ const TextSlide = () => {
         Playwell Playwell Playwell Playwell Playwell Playwell Playwell Playwell
       </span>
       <div className=" flex gap-2 relative text-slide-two uppercase font-bold">
-      <h1 className="text-slide  whitespace-nowrap text-[#9eb5f6] leading-[120px] text-[10rem] screen:text-8xl mobile:text-7xl  ">
+      <h1 className="text-slide  whitespace-nowrap text-[#29F2FF] leading-[120px] text-[10rem] screen:text-8xl mobile:text-7xl  ">
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
@@ -49,7 +49,7 @@ const TextSlide = () => {
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE
       </h1>
-      <h1 className="text-slide text-[10rem] text-[#9eb5f6] whitespace-nowrap leading-[120px] right-[100%] top-0 absolute screen:text-8xl mobile:text-7xl px-2">
+      <h1 className="text-slide text-[10rem] text-[#29F2FF] whitespace-nowrap leading-[120px] right-[100%] top-0 absolute screen:text-8xl mobile:text-7xl px-2">
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
         ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE ONLINE
