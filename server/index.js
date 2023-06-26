@@ -17,9 +17,7 @@ mongoose
 // middlewares
 app.use(express.json({ limit: "5mb" }));
 app.use(
-  cors({
-    origin: [process.env.CLIENT_URL],
-  })
+  cors()
 );
 
 // autoload routes

@@ -17,7 +17,7 @@ const SubscriptionPlan = () => {
   useEffect(() => {
     const getSubscriptions = async () => {
       const { data } = await axios.get(
-        "https://pwo-mern-api.onrender.com/api/subscriptions"
+        "http://localhost:5000/api/subscriptions"
       );
       setSubscriptions(data.data);
       setIsFetching(false);
@@ -44,7 +44,7 @@ const SubscriptionPlan = () => {
 
   const fetchPrices = async () => {
     const { data } = await axios.get(
-      "https://pwo-mern-api.onrender.com/api/prices"
+      "http://localhost:5000/api/prices"
     );
     setPrices(data);
     setIsFetching(false);
@@ -58,7 +58,7 @@ const SubscriptionPlan = () => {
 
     if (state && state.token) {
       const { data } = await axios.post(
-        "https://pwo-mern-api.onrender.com/api/create-subscription",
+        "http://localhost:5000/api/create-subscription",
         {
           priceId: price.id,
         }

@@ -90,3 +90,50 @@ export const login = async (req, res) => {
     console.log(err);
   }
 };
+// all users
+export const getAllUsers = async (req, res) => {
+  try {
+    const users = await User.find();
+    res.json(users);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+//user last month
+export const getUsersJoinedLastMonth = async (req, res) => {
+  try {
+    const currentDate = new Date();
+    const startOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+    const endOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+    const users = await User.find({
+      createdAt: { $gte: startOfMonth, $lte: endOfMonth },
+    });
+    res.json(users);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+
+export const deleteUserById = async (req, res) => {
+  const { userId } = req.params;
+  try {
+    const user = await User.findById(userId);
+    if (!user) {
+      return res.status(404).json({ error: 'User not found' });
+    }
+    await stripe.customers.del(user.stripe_customer_id);
+    await User.findByIdAndDelete(userId);
+    res.json({ message: 'User deleted successfully' });
+  } catch (error) {
+    if (error.name === 'CastError') {
+      res.status(400).json({ error: 'Invalid user ID' });
+    } else {
+      console.log(error);
+      res.status(500).json({ error: 'Internal server error' });
+    }
+  }
+};

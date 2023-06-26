@@ -19,7 +19,7 @@ const ForgotPassword = () => {
 
     try {
       const { data } = await axios.post(
-        "https://pwo-mern-api.onrender.com/api/forgotpassword",
+        "http://localhost:5000/api/forgotpassword",
         { email },
         config
       );

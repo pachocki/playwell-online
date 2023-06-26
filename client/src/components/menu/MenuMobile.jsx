@@ -29,7 +29,7 @@ const MenuMobile = () => {
   useEffect(() => {
     const getSubscriptions = async () => {
       const { data } = await axios.get(
-        "https://pwo-mern-api.onrender.com/api/subscriptions"
+        "http://localhost:5000/api/subscriptions"
       );
       setSubscriptions(data.data);
     };
@@ -89,7 +89,7 @@ const MenuMobile = () => {
 
   return (
     <>
-      <div className="absolute right-6  screen:block top-6 scale-150 big-screen:hidden">
+      <div className="absolute right-6  screen:block top-6 scale-150 hidden">
         <svg
           onClick={() => setIsOpen(!isOpen)}
           width="47"

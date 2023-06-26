@@ -9,7 +9,7 @@ import { UserContext } from "../../context/context";
 import { toast, Toaster } from "react-hot-toast";
 
 // Login Url
-const LOGIN_URL = "https://pwo-mern-api.onrender.com/api/login";
+const LOGIN_URL = "http://localhost:5000/api/login";
 
 const Login = () => {
   //Navigate
