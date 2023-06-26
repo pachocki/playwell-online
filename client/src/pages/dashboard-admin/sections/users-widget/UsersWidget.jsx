@@ -6,12 +6,12 @@ const UsersWidget = () => {
 
   useEffect(() => {
     async function fetchUsers() {
-      const response = await fetch("http://localhost:5000/api/users");
+      const response = await fetch("https://pwo-mern-api.onrender.com/api/users");
       const data = await response.json();
       setUsers(data);
     }
     async function fetchTransactions() {
-      const response = await fetch("http://localhost:5000/api/transactions");
+      const response = await fetch("https://pwo-mern-api.onrender.com/api/transactions");
       const data = await response.json();
       setTransactions(data);
     }

@@ -19,7 +19,7 @@ const Menu = ({ showMenu, isOpen }) => {
   useEffect(() => {
     const getSubscriptions = async () => {
       const { data } = await axios.get(
-        "http://localhost:5000/api/subscriptions"
+        "https://pwo-mern-api.onrender.com/api/subscriptions"
       );
       setSubscriptions(data.data);
     };

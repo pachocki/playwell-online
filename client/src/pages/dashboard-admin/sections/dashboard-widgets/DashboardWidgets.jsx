@@ -10,13 +10,13 @@ const DashboardWidgets = () => {
   useEffect(() => {
   
     async function fetchUsers() {
-      const response = await fetch("http://localhost:5000/api/users");
+      const response = await fetch("https://pwo-mern-api.onrender.com/api/users");
       const data = await response.json();
       setUsers(data);
     }
     async function fetchLastMonthUsers() {
       const response = await fetch(
-        "http://localhost:5000/api/users/last-month"
+        "https://pwo-mern-api.onrender.com/api/users/last-month"
       );
       const data = await response.json();
       setLastMonthUsers(data);
@@ -24,7 +24,7 @@ const DashboardWidgets = () => {
     const fetchTotalEarnings = async () => {
       try {
         const response = await fetch(
-          "http://localhost:5000/api/total-earnings"
+          "https://pwo-mern-api.onrender.com/api/total-earnings"
         );
         const data = await response.json();
         setTotalEarnings(data.totalEarnings);

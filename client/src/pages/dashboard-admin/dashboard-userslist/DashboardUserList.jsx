@@ -12,12 +12,12 @@ export default function DashboardUserList() {
 
   useEffect(() => {
     async function fetchUsers() {
-      const response = await fetch("http://localhost:5000/api/users");
+      const response = await fetch("https://pwo-mern-api.onrender.com/api/users");
       const data = await response.json();
       setUsers(data);
     }
     async function fetchTransactions() {
-      const response = await fetch("http://localhost:5000/api/transactions");
+      const response = await fetch("https://pwo-mern-api.onrender.com/api/transactions");
       const data = await response.json();
       setTransactions(data);
     }
@@ -30,9 +30,9 @@ export default function DashboardUserList() {
     const confirmed = window.confirm(`Are you sure you want to delete  ${username} ?`);
     if (confirmed) {
       try {
-        const response = await axios.delete(`http://localhost:5000/api/users/${userId}`);
+        const response = await axios.delete(`https://pwo-mern-api.onrender.com/api/users/${userId}`);
         console.log(response.data);
-        const usersResponse = await axios.get('http://localhost:5000/api/users');
+        const usersResponse = await axios.get('https://pwo-mern-api.onrender.com/api/users');
         setUsers(usersResponse.data);
         toast.success(`Successfully deleted user ${username}`);
       } catch (error) {
