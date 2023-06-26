@@ -129,7 +129,7 @@ const UsersWidget = () => {
                         </Fragment>
                       ))
                     ) : (
-                      <td colSpan="5">No subscriptions found.</td>
+                      <td colSpan="5">-</td>
                     )}
                   </tr>
                 ))}
