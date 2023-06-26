@@ -86,7 +86,7 @@ const StreamingChat = (props) => {
             <img
               src={props.image}
               alt="game"
-              className=" rounded-xl border-[1px] border-gray-600 w-full h-[35vh] big-screen:h-full "
+              className=" rounded-xl border-[1px] border-gray-600 w-full h-[35vh]  "
             />
             <img
               src={props.instructor}
