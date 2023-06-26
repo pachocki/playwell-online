@@ -41,7 +41,7 @@ const DashboardCalendar = () => {
       if (title) {
         try {
           const response = await axios.post(
-            "https://pwo-mern-api.onrender.com/api/events",
+            "http://localhost:5000/api/events",
             {
               title,
               start,
@@ -64,7 +64,7 @@ const DashboardCalendar = () => {
 
   const fetchEvents = useCallback(async () => {
     try {
-      const response = await axios.get("https://pwo-mern-api.onrender.com/api/events");
+      const response = await axios.get("http://localhost:5000/api/events");
       setEvents(response.data.events);
     } catch (error) {
       console.error(error);
@@ -87,7 +87,7 @@ const DashboardCalendar = () => {
       if (action === "delete") {
         try {
           const response = await axios.delete(
-            `https://pwo-mern-api.onrender.com/api/events/${event._id}`
+            `http://localhost:5000/api/events/${event._id}`
           );
           if (response.status === 200) {
             const updatedEvents = myEvents.filter((e) => e._id !== event._id);
@@ -104,7 +104,7 @@ const DashboardCalendar = () => {
         if (title) {
           try {
             const response = await axios.put(
-              `https://pwo-mern-api.onrender.com/api/events/${event._id}`,
+              `http://localhost:5000/api/events/${event._id}`,
               {
                 title,
                 eventId: event._id,

@@ -7,7 +7,7 @@ const DashboardChart = () => {
 
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch("https://pwo-mern-api.onrender.com/api/transactions");
+      const response = await fetch("http://localhost:5000/api/transactions");
       const transactions = await response.json();
   
       const dateLabels = Array.from({ length: 12 }, (_, i) => {
