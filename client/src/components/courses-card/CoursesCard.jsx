@@ -3,7 +3,7 @@ import React from "react";
 const CoursesCard = (props) => {
   return (
     <div className="flex flex-col w-full bg-zinc-900 backdrop-blur-40 rounded-lg   overflow-hidden ">
-      <div className=" w-full h-[300px] rounded-t-xl ">
+      <div className=" w-full h-full rounded-t-xl ">
         <img src={props.image} alt={props.alt} />
       </div>
       <div className="flex  flex-col w-full  gap-1 text-gray-300 pb-4 tablet:pb-1 ">

@@ -25,14 +25,21 @@ const StreamingChat = (props) => {
         <FaDiscord className="text-2xl tablet:text-lg" />
       </div>
       <div className="flex  px-1 ">
-        <div className="flex flex-col relative items-center gap-1 py-2 bg-zinc-900  w-[15%]  my-3 rounded-xl border-[1px] border-gray-600 mx-1 small-mobile:hidden ">
-          <FaUsers className="text-5xl laptop:text-4xl text-gray-100 my-2 tablet:text-2xl" />
-          <img
-            src={Avatar1}
-            alt="Fortnite gameplay"
-            className=" rounded-full w-[75px] h-[75px]  laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
-          />
-          <p className="text-purple-500 screen:text-sm tablet:hidden">Sakura</p>
+        <div className="flex flex-col relative items-center justify-between text-center gap-1 py-2 bg-zinc-900  w-[15%]  my-3 rounded-xl border-[1px] border-gray-600 mx-1 small-mobile:hidden ">
+          <div>
+            <FaUsers className="text-5xl laptop:text-4xl text-gray-100 my-2 tablet:text-2xl" />
+          </div>
+          <div>
+            <img
+              src={Avatar1}
+              alt="Fortnite gameplay"
+              className=" rounded-full w-[75px] h-[75px]  laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
+            />
+            <p className="text-purple-500 screen:text-sm tablet:hidden">
+              Sakura
+            </p>
+          </div>
+          <div>
           <img
             src={Avatar2}
             alt="Fortnite gameplay"
@@ -41,6 +48,8 @@ const StreamingChat = (props) => {
           <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
             Trond
           </p>
+          </div>
+          <div>
           <img
             src={Avatar3}
             alt="Fortnite gameplay"
@@ -49,6 +58,8 @@ const StreamingChat = (props) => {
           <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
             Miqu
           </p>
+          </div>
+          <div>
           <img
             src={Avatar4}
             alt="Fortnite gameplay"
@@ -57,6 +68,8 @@ const StreamingChat = (props) => {
           <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
             Instr
           </p>
+          </div>
+          <div>
           <img
             src={Avatar5}
             alt="Fortnite gameplay"
@@ -65,6 +78,7 @@ const StreamingChat = (props) => {
           <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
             Lionel
           </p>
+          </div>
           <FaDoorOpen className="text-5xl laptop:text-4xl bottom-2 tablet:text-2xl" />
         </div>
         <div className="flex flex-col gap-2 w-full h-full  mx-auto my-3 tablet:gap-1">
