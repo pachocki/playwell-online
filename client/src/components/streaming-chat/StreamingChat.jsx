@@ -43,7 +43,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar2}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[40px] laptop:h-[40px]"
+              className=" rounded-full w-[50px] laptop:h-[50px]"
             />
             <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
               Trond
@@ -53,7 +53,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar3}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[40px] laptop:h-[40px]"
+              className=" rounded-full w-[50px] laptop:h-[50px]"
             />
             <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
               Miqu
@@ -63,7 +63,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar4}
               alt="Fortnite gameplay"
-              className=" w-[40px] laptop:h-[40px]"
+              className=" rounded-full w-[50px] laptop:h-[50px]"
             />
             <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
               Instr
@@ -73,7 +73,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar5}
               alt="Fortnite gameplay"
-              className=" w-[40px] laptop:h-[40px]"
+              className=" rounded-full w-[50px] laptop:h-[50px]"
             />
             <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
               Lionel
@@ -86,7 +86,7 @@ const StreamingChat = (props) => {
             <img
               src={props.image}
               alt="game"
-              className=" rounded-xl border-[1px] border-gray-600 w-full laptop:h-[35vh] "
+              className=" rounded-xl border-[1px] border-gray-600 w-full h-[35vh] big-screen:h-full "
             />
             <img
               src={props.instructor}
