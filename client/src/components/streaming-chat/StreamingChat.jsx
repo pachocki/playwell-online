@@ -33,7 +33,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar1}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px]  laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
+              className=" rounded-full w-[40px] laptop:h-[40px]   tablet:hidden"
             />
             <p className="text-purple-500 screen:text-sm tablet:hidden">
               Sakura
@@ -43,7 +43,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar2}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+              className=" rounded-full w-[40px] laptop:h-[40px]"
             />
             <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
               Trond
@@ -53,7 +53,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar3}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+              className=" rounded-full w-[40px] laptop:h-[40px]"
             />
             <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
               Miqu
@@ -63,7 +63,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar4}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+              className=" w-[40px] laptop:h-[40px]"
             />
             <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
               Instr
@@ -73,7 +73,7 @@ const StreamingChat = (props) => {
             <img
               src={Avatar5}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+              className=" w-[40px] laptop:h-[40px]"
             />
             <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
               Lionel
