@@ -19,7 +19,7 @@ const Menu = ({ showMenu, isOpen }) => {
   useEffect(() => {
     const getSubscriptions = async () => {
       const { data } = await axios.get(
-        "https://pwo-mern-api.onrender.com/api/subscriptions"
+        "http://localhost:5000/api/subscriptions"
       );
       setSubscriptions(data.data);
     };
@@ -28,7 +28,7 @@ const Menu = ({ showMenu, isOpen }) => {
   }, [state && state.token]);
 
   return (
-    <div>
+    <nav>
       <div className="flex justify-between items-center fixed top-0 py-5 w-screen text-white bg-zinc-900  z-[100] big-screen:px-8 laptop:px-6 mobile:px-2 ">
         <div>
           <NavLink to="/">
@@ -41,7 +41,7 @@ const Menu = ({ showMenu, isOpen }) => {
         </div>
         <MenuMobile showMenu={showMenu} isOpen={isOpen} />
 
-        <ul className="big-screen:flex big-screen:text-2xl big-screen:gap-8 big-screen:items-center big-screen:font-thick laptop:text-xl laptop:gap-5 screen:hidden">
+        <ul className="flex text-2xl gap-8 items-center font-thick laptop:text-xl laptop:gap-5 screen:hidden">
           <li className="hover:opacity-50 transition ease-in-out delay-150">
             <NavLink to="/minecraft">Minecraft</NavLink>
           </li>
@@ -72,7 +72,7 @@ const Menu = ({ showMenu, isOpen }) => {
             </li>
           )}
         </ul>
-        <ul className="big-screen:flex big-screen:gap-5 big-screen:text-2xl big-screen:items-center big-screen:font-thick laptop:text-xl laptop:gap-5 screen:hidden">
+        <ul className="flex gap-5 text-2xl items-center font-thick laptop:text-xl laptop:gap-5 screen:hidden">
           {state && state.token ? (
             <>
               <Dropdown />
@@ -97,7 +97,7 @@ const Menu = ({ showMenu, isOpen }) => {
           )}
         </ul>
       </div>
-    </div>
+    </nav>
   );
 };
 

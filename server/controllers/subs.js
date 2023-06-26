@@ -84,3 +84,53 @@ export const customerPortal = async (req, res) => {
     console.log(err);
   }
 };
+export const totalEarnings = async (req, res) => {
+  try {
+    const charges = await stripe.charges.list();
+    const totalAmount = charges.data.reduce(
+      (acc, curr) => acc + curr.amount,
+      0
+    );
+
+    res.json({ totalEarnings: totalAmount });
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};
+
+export const transactions = async (req, res) => {
+  try {
+    const charges = await stripe.charges.list();
+    const customerIds = new Set(charges.data.map((charge) => charge.customer));
+    const users = await User.find({
+      stripe_customer_id: { $in: [...customerIds] },
+    }).lean();
+
+    const promises = users.map(async (user) => {
+      const subscriptions = await stripe.subscriptions.list({
+        customer: user.stripe_customer_id,
+        status: "all",
+        expand: ["data.default_payment_method", "data.plan.product"],
+      });
+
+      user.subscriptions = subscriptions.data.map(subscription => {
+        return {
+          planName: subscription.plan.nickname,
+          planPrice: subscription.plan.amount / 100,
+          productName: subscription.plan.product.name,
+          paymentMethod: subscription.default_payment_method.card.brand,
+          nextBillingDate: subscription.current_period_end,
+        }
+      });
+      return user;
+    });
+
+    const usersWithSubscriptions = await Promise.all(promises);
+
+    res.json(usersWithSubscriptions);
+  } catch (err) {
+    console.log(err);
+    res.status(500).json({ error: "Internal server error" });
+  }
+};

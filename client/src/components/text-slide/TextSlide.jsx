@@ -12,7 +12,7 @@ const TextSlide = () => {
               trigger: ".text-slide-container",
               start: "top bottom",
               end: "bottom top",
-              scrub: 0.1,
+              scrub:1,
              
             }
           });

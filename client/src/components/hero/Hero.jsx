@@ -71,7 +71,7 @@ const Hero = (props) => {
         <img
           src={Image2}
           alt="hero"
-          className="move__two absolute w-1/4 h-1/6 rounded-lg left-[0%] top-[40%] laptop:w-1/4 rotate-2 screen:opacity-60  mobile:hidden"
+          className="move__two object-cover absolute w-1/6 h-1/6 rounded-lg left-[2%] top-[40%] laptop:w-[200px] rotate-2 screen:opacity-60  mobile:hidden"
         />
         <img
           src={Image3}
@@ -86,7 +86,7 @@ const Hero = (props) => {
         <img
           src={Image5}
           alt="hero"
-          className="move__three absolute w-[400px] rounded-lg right-[1%] top-86 rotate-2 laptop:w-1/4 screen:opacity-60 mobile:w-[120px] mobile:right-0"
+          className="move__three absolute w-1/6 rounded-lg right-[1%] top-86 rotate-2 laptop:w-[200px] screen:opacity-60 mobile:w-[120px] mobile:right-0"
         />
         <img
           src={Image6}

@@ -1,57 +1,53 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
-const data = [
-    {
-        name: "Jan",
-        "Active User": 1200,
-      },
-      {
-        name: "Feb",
-        "Active User": 1600,
-      },
-      {
-        name: "Mar",
-        "Active User": 2100,
-      },
-      {
-        name: "Apr",
-        "Active User": 2400,
-      },
-      {
-        name: "May",
-        "Active User": 2600,
-      },
-      {
-        name: "Jun",
-        "Active User": 2710,
-      },
-      {
-        name: "Jul",
-        "Active User": 2600,
-      },
-      {
-        name: "Agu",
-        "Active User": 2200,
-      },
-      {
-        name: "Sep",
-        "Active User": 3000,
-      },
-      {
-        name: "Oct",
-        "Active User": 3100,
-      },
-      {
-        name: "Nov",
-        "Active User": 3000,
-      },
-      {
-        name: "Dec",
-        "Active User": 2600,
-      },
-    ];
+
 
 const DashboardChart = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    async function fetchData() {
+      const response = await fetch("http://localhost:5000/api/transactions");
+      const transactions = await response.json();
+  
+      const dateLabels = Array.from({ length: 12 }, (_, i) => {
+        const date = new Date();
+        date.setMonth(date.getMonth() - (11 - i));
+        return date.toLocaleString("default", { month: "short" });
+      });
+  
+      const activeUsers = dateLabels.map((label, index) => {
+        if (index === 0) {
+          // For January, use total number of transactions
+          return transactions.length;
+        } else {
+          // For other months, filter transactions by month and return length
+          const currentMonth = new Date().getMonth() ;
+          const monthTransactions = transactions.filter(
+            (transaction) => {
+              const transactionDate = new Date(transaction.date);
+              const transactionMonth = transactionDate.getMonth() + 1;
+              return (
+                transactionMonth === index &&
+                transactionMonth <= currentMonth &&
+                transaction.status === "success"
+              );
+            }
+          );
+          return monthTransactions.length;
+        }
+      });
+  
+      const data = dateLabels.map((label, index) => ({
+        name: label,
+        "Active User": activeUsers[index],
+      }));
+  
+      setData(data);
+    }
+    fetchData();
+  }, []);
+
   return (
    
         <div className="bg-black/20  h-[60vh]  rounded-xl mx-5 my-2 pb-5 tablet:h-[45vh] mobile:h-[35vh]">
