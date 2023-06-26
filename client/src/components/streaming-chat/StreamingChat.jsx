@@ -33,60 +33,60 @@ const StreamingChat = (props) => {
             <img
               src={Avatar1}
               alt="Fortnite gameplay"
-              className=" rounded-full w-[75px] h-[75px]  laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
+              className=" rounded-full w-[75px] h-[75px]  laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
             />
             <p className="text-purple-500 screen:text-sm tablet:hidden">
               Sakura
             </p>
           </div>
           <div>
-          <img
-            src={Avatar2}
-            alt="Fortnite gameplay"
-            className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
-          />
-          <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
-            Trond
-          </p>
+            <img
+              src={Avatar2}
+              alt="Fortnite gameplay"
+              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+            />
+            <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
+              Trond
+            </p>
           </div>
           <div>
-          <img
-            src={Avatar3}
-            alt="Fortnite gameplay"
-            className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
-          />
-          <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
-            Miqu
-          </p>
+            <img
+              src={Avatar3}
+              alt="Fortnite gameplay"
+              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+            />
+            <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
+              Miqu
+            </p>
           </div>
           <div>
-          <img
-            src={Avatar4}
-            alt="Fortnite gameplay"
-            className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
-          />
-          <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
-            Instr
-          </p>
+            <img
+              src={Avatar4}
+              alt="Fortnite gameplay"
+              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+            />
+            <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
+              Instr
+            </p>
           </div>
           <div>
-          <img
-            src={Avatar5}
-            alt="Fortnite gameplay"
-            className=" rounded-full w-[75px] h-[75px] laptop:w-[60px] laptop:h-[60px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
-          />
-          <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
-            Lionel
-          </p>
+            <img
+              src={Avatar5}
+              alt="Fortnite gameplay"
+              className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+            />
+            <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
+              Lionel
+            </p>
           </div>
-          <FaDoorOpen className="text-5xl laptop:text-4xl bottom-2 tablet:text-2xl" />
+          <FaDoorOpen className="text-5xl laptop:text-4xl text-gray-100 my-2 tablet:text-2xl" />
         </div>
         <div className="flex flex-col gap-2 w-full h-full  mx-auto my-3 tablet:gap-1">
           <div className="relative">
             <img
               src={props.image}
               alt="game"
-              className=" rounded-xl border-[1px] border-gray-600 w-full tablet:h-[200px] "
+              className=" rounded-xl border-[1px] border-gray-600 w-full laptop:h-[35vh] "
             />
             <img
               src={props.instructor}
