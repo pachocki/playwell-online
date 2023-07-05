@@ -134,7 +134,7 @@ const SignUp = () => {
       <section className="flex  justify-center items-center  m-auto   w-3/4 h-screen screen:w-[95%]   ">
         <form
           onSubmit={handleSubmit}
-          className="flex flex-col justify-evenly bg-zinc-900 w-1/2 h-[82vh] rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 "
+          className="flex flex-col justify-evenly bg-zinc-900 w-1/2 h-full rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 "
         >
           <h1 className="text-5xl pb-2 pt-8">Register</h1>
           <label htmlFor="username" className="mt-2">
