@@ -125,7 +125,7 @@ const SignUp = () => {
   };
 
   return (
-    <div className="w-full h-screen pt-10">
+    <div className="w-full h-full my-10">
       <div>
         <Toaster position="bottom-center" reverseOrder={true} />
       </div>

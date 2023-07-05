@@ -58,7 +58,7 @@ const ResetPassword = () => {
 
   return (
     <div>
-      <section className="flex  justify-center items-center  m-auto   w-3/4 h-screen screen:w-[95%] mobile:h-[80vh] mobile:pt-20">
+      <section className="flex  justify-center items-center  m-auto   w-3/4 h-full screen:w-[95%] mobile:h-full mobile:my-20">
         <form
           onSubmit={resetPasswordHandler}
           className="flex flex-col justify-center gap-3 bg-zinc-900 w-1/2 h-[50vh] rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 "
