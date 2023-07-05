@@ -91,7 +91,7 @@ const StreamingChat = (props) => {
             <img
               src={props.instructor}
               alt="Instructor"
-              className="rounded-xl w-[150px] from-black via-red-900 to-black bg-gradient-to-r absolute right-6 top-4 screen:top-2 screen:right-5  tablet:top-1 tablet:right-6 mobile:right-4 mobile:top-3 mobile:rounded-lg "
+              className="rounded-xl w-[150px] from-black via-red-900 to-black bg-gradient-to-r absolute right-6 top-4 screen:top-2 screen:right-5  tablet:top-1 tablet:right-6 mobile:right-4 mobile:top-3 mobile:rounded-lg mobile:w-[50px]"
             />
           </div>
           <div className="w-full bg-zinc-900 border-[1px] border-gray-600 rounded-xl">
@@ -104,7 +104,7 @@ const StreamingChat = (props) => {
                 <FaSlidersH />
               </div>
             </div>
-            <div className="flex-col pt-2 px-5 tablet:pt-1 tablet:px-2 small-mobile:hidden">
+            <div className="flex-col pt-2 px-5 tablet:pt-1 tablet:px-2 ">
               <div className="flex gap-4 items-center pb-2 ">
                 <img
                   src={Avatar4}
