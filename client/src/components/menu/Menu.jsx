@@ -81,14 +81,14 @@ const Menu = ({ showMenu, isOpen }) => {
             <>
               <li>
                 <Link to="/login">
-                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg ">
+                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg laptop:text-xl">
                     Login
                   </button>
                 </Link>
               </li>
               <li>
                 <Link to="/register">
-                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg">
+                  <button className="hover:opacity-50 transition ease-in-out delay-150 bg-red-700 px-2 py-1  rounded-lg laptop:text-xl">
                     Signup
                   </button>
                 </Link>
