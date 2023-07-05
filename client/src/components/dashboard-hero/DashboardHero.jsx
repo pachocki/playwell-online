@@ -25,7 +25,7 @@ const DashboardHero = () => {
   useEffect(() => {
     async function fetchEvents() {
       try {
-        const response = await axios.get("http://localhost:5000/api/events");
+        const response = await axios.get("https://pwo-mern-api.onrender.com/api/events");
         setEvents(response.data.events);
       } catch (error) {
         console.error(error);

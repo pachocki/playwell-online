@@ -12,13 +12,13 @@ const PricingPlan = () => {
   }, []);
 
   const fetchPrices = async () => {
-    const { data: response } = await axios.get("http://localhost:5000/prices");
+    const { data: response } = await axios.get("https://pwo-mern-api.onrender.com/prices");
 
     setPrices(response.data);
   };
   const createSession = async (priceId) => {
     const { data: response } = await axios.post(
-      "http://localhost:5000/session",
+      "https://pwo-mern-api.onrender.com/session",
       {
         priceId,
       }

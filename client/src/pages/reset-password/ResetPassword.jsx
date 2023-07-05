@@ -39,7 +39,7 @@ const ResetPassword = () => {
 
     try {
       const { data } = await axios.patch(
-        `http://localhost:5000/api/passwordreset/${param.resetToken}`,
+        `https://pwo-mern-api.onrender.com/api/passwordreset/${param.resetToken}`,
         {
           password,
           confirmpassword: confirmPassword,

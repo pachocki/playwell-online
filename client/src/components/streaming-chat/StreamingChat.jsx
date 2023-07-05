@@ -33,7 +33,11 @@ const StreamingChat = (props) => {
             <img
               src={Avatar1}
               alt="Fortnite gameplay"
+<<<<<<< HEAD
               className=" rounded-full w-[75px] h-[75px]  laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px]  tablet:hidden"
+=======
+              className=" rounded-full w-[40px] laptop:h-[40px]   tablet:hidden"
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <p className="text-purple-500 screen:text-sm tablet:hidden">
               Sakura
@@ -43,7 +47,11 @@ const StreamingChat = (props) => {
             <img
               src={Avatar2}
               alt="Fortnite gameplay"
+<<<<<<< HEAD
               className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+=======
+              className=" rounded-full w-[50px] laptop:h-[50px]"
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <p className="text-sky-500  screen:text-sm mobile:text-[0.7rem]">
               Trond
@@ -53,7 +61,11 @@ const StreamingChat = (props) => {
             <img
               src={Avatar3}
               alt="Fortnite gameplay"
+<<<<<<< HEAD
               className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+=======
+              className=" rounded-full w-[50px] laptop:h-[50px]"
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <p className="text-red-500 screen:text-sm mobile:text-[0.7rem]">
               Miqu
@@ -63,7 +75,11 @@ const StreamingChat = (props) => {
             <img
               src={Avatar4}
               alt="Fortnite gameplay"
+<<<<<<< HEAD
               className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+=======
+              className=" rounded-full w-[50px] laptop:h-[50px]"
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <p className="text-orange-500 screen:text-sm mobile:text-[0.7rem]">
               Instr
@@ -73,7 +89,11 @@ const StreamingChat = (props) => {
             <img
               src={Avatar5}
               alt="Fortnite gameplay"
+<<<<<<< HEAD
               className=" rounded-full w-[75px] h-[75px] laptop:w-[40px] laptop:h-[40px] screen:w-[40px] screen:h-[40px] tablet:w-[35px] tablet:h-[35px]"
+=======
+              className=" rounded-full w-[50px] laptop:h-[50px]"
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <p className="text-teal-500 screen:text-sm mobile:text-[0.7rem]">
               Lionel
@@ -86,12 +106,16 @@ const StreamingChat = (props) => {
             <img
               src={props.image}
               alt="game"
+<<<<<<< HEAD
               className=" rounded-xl border-[1px] border-gray-600 w-full laptop:h-[35vh] "
+=======
+              className=" rounded-xl border-[1px] border-gray-600 w-full h-[35vh]  "
+>>>>>>> 739db4677833a2c6a13c48d6796d020ae9eb65aa
             />
             <img
               src={props.instructor}
               alt="Instructor"
-              className="rounded-xl w-1/5 from-black via-red-900 to-black bg-gradient-to-r absolute right-6 top-4 screen:top-2 screen:right-5  tablet:top-1 tablet:right-6 mobile:right-4 mobile:top-3 mobile:rounded-lg "
+              className="rounded-xl w-[150px] from-black via-red-900 to-black bg-gradient-to-r absolute right-6 top-4 screen:top-2 screen:right-5  tablet:top-1 tablet:right-6 mobile:right-4 mobile:top-3 mobile:rounded-lg "
             />
           </div>
           <div className="w-full bg-zinc-900 border-[1px] border-gray-600 rounded-xl">
