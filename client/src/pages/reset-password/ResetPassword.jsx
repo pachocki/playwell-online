@@ -63,7 +63,7 @@ const ResetPassword = () => {
           onSubmit={resetPasswordHandler}
           className="flex flex-col justify-center gap-3 bg-zinc-900 w-1/2 h-[50vh] rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 "
         >
-          <h1 className="text-5xl pb-2 ">Reset Password</h1>
+          <h1 className="text-5xl pt-5 pb-2  ">Reset Password</h1>
 
           <label htmlFor="password">New Password:</label>
           <input

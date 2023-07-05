@@ -96,21 +96,19 @@ const SignUp = () => {
       if (data.error) {
         setErrMsg(data.error);
         toast.error(data.error);
-      }else{
+      } else {
         setUsername("");
         setPassword("");
         setEmail("");
         setMatchPassword("");
         console.log(data);
-         ;
         toast.success(
           `Hei ${data.user.username}. Du er en del av oss nå. Gratulere!`
         );
         setTimeout(() => {
           navigate("/login");
-     }, 2000);
+        }, 2000);
       }
-     
     } catch (err) {
       if (!err?.response) {
         setErrMsg("No Server Response");

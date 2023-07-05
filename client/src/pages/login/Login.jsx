@@ -82,7 +82,7 @@ const Login = () => {
           onSubmit={handleSubmit}
           className="flex flex-col justify-center gap-3 bg-zinc-900 w-1/2 h-full rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 "
         >
-          <h1 className="text-5xl pb-2 ">Sign In</h1>
+          <h1 className="text-5xl pb-2 pt-5">Sign In</h1>
           <label htmlFor="email" className="mt-2">
             Email:
           </label>

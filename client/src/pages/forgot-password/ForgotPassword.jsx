@@ -40,7 +40,7 @@ const ForgotPassword = () => {
           onSubmit={forgotPasswordHandler}
           className="flex flex-col justify-center gap-3 bg-zinc-900 w-1/2 h-[50vh] rounded-l-xl overflow-hidden  px-20 laptop:px-5 mobile:w-2/3 tablet:px-2 "
         >
-          <h1 className="text-5xl pb-2 tablet:text-4xl mobile:text-3xl ">
+          <h1 className="text-5xl pb-2 pt-5 tablet:text-4xl mobile:text-3xl ">
             Forgot Password
           </h1>
           <p className="text-lg mobile:text-sm">
