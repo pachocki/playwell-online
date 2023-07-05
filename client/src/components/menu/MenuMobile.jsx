@@ -116,7 +116,7 @@ const MenuMobile = () => {
             className="h-full screen:w-1/2 mobile:absolute mobile:w-full "
           />
           <ul
-            className="flex flex-col justify-center items-center relative w-full h-full gap-5 text-4xl opacity-0 screen:w-1/2 mobile:w-full z-50 "
+            className="flex flex-col justify-center items-center relative w-full h-full gap-2 text-3xl opacity-0 screen:w-1/2 mobile:w-full z-50 mobile: "
             onClick={() => showMenu((prevState) => !prevState)}
             ref={link}
           >

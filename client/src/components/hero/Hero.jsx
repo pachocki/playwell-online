@@ -86,7 +86,7 @@ const Hero = (props) => {
         <img
           src={Image5}
           alt="hero"
-          className="move__three absolute w-1/6 rounded-lg right-[1%] top-86 rotate-2 laptop:w-[200px] screen:opacity-60 mobile:w-[120px] mobile:right-0"
+          className="move__three absolute w-1/6 rounded-lg right-[1%] top-86 rotate-2 laptop:w-[200px] screen:opacity-60 mobile:w-[120px] mobile:right-0 small-mobile:hidden"
         />
         <img
           src={Image6}
@@ -96,12 +96,12 @@ const Hero = (props) => {
         <img
           src={Image7}
           alt="hero"
-          className="move__two absolute  w-1/5  rounded-lg right-2 bottom-10 rotate-[-6deg] laptop:bottom-32  mobile:w-1/3 mobile:bottom-56  "
+          className="move__two absolute  w-1/5  rounded-lg right-2 bottom-10 rotate-[-6deg] laptop:bottom-32  mobile:w-1/3 mobile:bottom-56 small-mobile:bottom-44 "
         />
         <img
           src={Image8}
           alt="hero"
-          className="move__one absolute  w-[10%]  rounded-lg left-6 bottom-12 rotate-[6deg]  mobile:w-1/6 mobile:top-[44%] mobile:opacity-40 "
+          className="move__one absolute  w-[10%]  rounded-lg left-6 bottom-12 rotate-[6deg]  mobile:w-1/6 mobile:top-[44%] mobile:opacity-40 small-mobile:hidden"
         />
 
         <div
